@@ -2,7 +2,7 @@ title: bleu
 author: chrissu
 subtitle: bomp
 
-baseurl: "bleu_blog"
+baseurl: "/bleu_blog"
 
 profile-picture: assets/pngwing.com.png
 favicon_location: assets/favicon.ico
