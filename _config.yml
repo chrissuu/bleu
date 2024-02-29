@@ -1,0 +1,17 @@
+title: bleu
+author: chrissu
+subtitle: bomp
+
+baseurl: ""
+
+profile-picture: assets/pngwing.com.png
+favicon_location: assets/favicon.ico
+
+permalink: /:year-:month-:day-:title/
+sass:
+    style: compressed
+    sass_dir: css
+
+navbar:
+ - name: "About"
+   link: "about"
