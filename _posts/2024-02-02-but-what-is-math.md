@@ -4,22 +4,19 @@ title: but, what is math?
 subtitle: a high level overview of the age old question
 tags: [math]
 ---
+>There are no such people. People who succeed in mathematics, like people who learn a musical instrument or a new language, spend a lot of time not understanding and feeling frustration. The path to understanding in mathematics necessarily involves, in the words of Steve Klee (4), being willing to struggle.” It is strange that people do not understand this about mathematics when it is commonplace in essentially every other field of human endeavor. The people whose stories are in this book clearly understand this fact. Some of them, for example Lola Thompson (7) and Laura Taalman (8), avidly embrace the struggle, they seek out the experience of frustration and confusion because they have realized that persistence in the face of difficulty leads to the rewards of learning and growth.
+>
+>From the book [Living Proof](https://www.ams.org/about-us/LivingProof.pdf) and a quote that one of my professors had written on our second homework assignment
 
 A few weeks ago, I was talking to my friend about what math is. Like me, he enjoys music, but he studies piano performance as well as English. As we were walking back to our dorm, he told me that he's not really a numbers person and that he always struggled in highschool math classes. 
 
-I'm sure a handful of other people are also in the same boat - they find math to be difficult. To be completely fair, some people definitely have a natural aptitude for mathematics and the sciences. But I think it is unfair to dismiss math just because you find it difficult - it should be difficult!
-
-This was a quote that one of my professors had written on our second homework assignment:
-
->There are no such people. People who succeed in mathematics, like people who learn a musical instrument or a new language, spend a lot of time not understanding and feeling frustration. The path to understanding in mathematics necessarily involves, in the words of Steve Klee (4), being willing to struggle.” It is strange that people do not understand this about mathematics when it is commonplace in essentially every other field of human endeavor. The people whose stories are in this book clearly understand this fact. Some of them, for example Lola Thompson (7) and Laura Taalman (8), avidly embrace the struggle, they seek out the experience of frustration and confusion because they have realized that persistence in the face of difficulty leads to the rewards of learning and growth.
->
->From the book [Living Proof](https://www.ams.org/about-us/LivingProof.pdf)
+I'm sure a handful of other people are also in the same boat - they find math to be difficult. To be completely fair, some people definitely have a natural aptitude for mathematics and the sciences. But I think that the reason why math might be so difficult is because 
 
 In the same regard, I think math should be difficult, and because it's difficult, it's fun! (Nothing in life that's good for you and fun for you is also easy for you)
 
 ### But, what is math?
 
-A struggle with math usually begins either in middle school or high school, where teachers throw a bunch of computational questions for you to do. I think a very common class this occurs in is for example, precalculus or calculus class, where we are asked to memorize a bunch of formulas for derivatives, or trig rules, etc. Although computation is important for building your mathematical toolkit, it doesn't really teach you _why_ we learn these things. 
+In middle school and high school, most math classes have teachers throw a bunch of computational questions for you to do. For example, a common class this occurs in is precalculus or calculus, where students are asked to memorize a bunch of formulas for derivatives, trig rules, etc. Although computation is important for building your mathematical toolkit, it doesn't really teach you _why_ we learn these things. 
 
 In the next few sections I want to outline what _math_ is. (Of course, each section could have an entire post by itself)
 
@@ -55,29 +52,22 @@ Vector spaces over the reals? Why not vector spaces over an arbitrary vector!
 
 This is what is often what is known as "(abstract) algebra", but of course abstractions and generalizations don't belong just in AA. Groups help us understand symmetries, vector spaces allow us to understand anything that might act as vectors, fields let us understand number systems, and etc... The power of abstraction is that if you are struggling with a problem, try giving it a structure (such as a vector space, a field, a group, or perhaps make it into a graph theory problem) and voila! Now you have access to the shoulders of countless giants who have proven thousands of theorems about them. 
 
-In a future post, I plan to elaborate more on this with the following topics:
->Godel's Incompleteness Theorems
->
->Grigori Perelman's Poincare Conjecture Story
->
->Theory of Computation
->
->Quantum Physics
-
-
 ### Math as the study of computation
+In the early 17th century, "computer" referred to "one who computes", or a physical person who would sit down to do countless arithmetic operations every single day. This was an important part of mathematics, since computation is so intricately tied with it.
 
-![image](../assets/HollerithMachine.jpg)
+<p align = "center">
+  <img src="../assets/HollerithMachine.jpg" />
+</p>
 
-In the early 17th century, "computer" referred to "one who computes", or a physical person who would sit down to do countless arithmetic operations every single day. Could you imagine doing that?
+Or, in the year 1614, a book titled "Mirifici Logarithmorum Canonis Descriptio" was published, that had thousands upon thousands of calculations of logarithms, exponents, sines, cosines, etc, at different values. (This was before the age of calculators) This book was to be used as a reference for mathematicians doing research, such as astronomers that needed precise values for sine and cosine at various angles. Although some entries were inevitably erroneous, the process of computation is deeply linked with mathematics as something that is very important.
 
-Or, in the year 1614, a book titled "Mirifici Logarithmorum Canonis Descriptio" was published, that had thousands upon thousands of calculations of logarithms, exponents, sines, cosines, etc, at different values. (This was before the age of calculators) This book was to be used as a reference for mathematicians doing research, especially astronomers that needed precise values for sine and cosine at various angles. Although some entries were inevitably erroneous, the process of computation is deeply linked with mathematics as something that is very important.
-
-Without doing any computation, there is really no way to reason about certain problems. It is a skill that mathematicians need and it is followed by the skill of algebraic manipulation. Take for instance the following integral:
+Without doing any computation, there is really no way to reason about certain problems. It is a skill that mathematicians need (the bread and butter) and it is followed by the skill of algebraic manipulation. Take for instance the following integral:
 
 $$\int sec(x) dx$$
 
-Without pulling from highschool calculus formulas, how would you integrate this? Well one algebraic manipulation we can do is to do the following:
+Without pulling from highschool calculus formulas, how would you integrate this? 
+
+It's a hard (and possibly impossible integral) without the insight of a powerful algebraic manipulation (the identity element for multiplication):
 
 $$\int sec(x) dx = \int sec(x) * 1 dx = \int sec(x) * \frac{sec(x) + tan(x)}{sec(x)+tan(x)} dx $$
 

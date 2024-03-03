@@ -1,7 +1,7 @@
 ---
 layout: post
 title: feynman's integral trick!
-subtitle: but it was made by leibniz >:(
+subtitle: feynman's integral trick, made by Leibniz?
 tags: [math]
 ---
 
@@ -92,17 +92,18 @@ $$\Leftrightarrow 2I(x, 1) = \frac{ln(2)}{2}\text{arctan}(1) + \frac{\pi}{8}ln(2
 
 $$\Leftrightarrow I(x, 1) = ln(2)\frac{\pi}{8} $$
 
-Phew, that was most calculus I've done in a year D:
+Phew, that was most calculus I've done in a year
 
 ### Overview
-Feynman's trick / diff. under the integral sign can be seen as the following steps:
+Feynman's trick can be seen as solving not just one integral but a family of integrals, and can be seen as the following steps:
 
 1. Identify a parameter to remove nasty functions (and one that lets you get initial values)
 2. Integrate normally
 3. Change it into a differential equation problem
 4. Get initial values from step 1
 5. Solve DE
-6. Done!!
+6. Plug in the value that makes the general solution into the specific solution
+7. Done!!
 
 References: 
 1. [Putnam 2005](https://kskedlaya.org/putnam-archive/2005.pdf)
