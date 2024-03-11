@@ -42,11 +42,9 @@ As technology progressed, our ability to compute improved greatly. The average m
 
 With the introduction of personal computers, the notion of "computers" as humans doing actual calculations have been replaced with a small laptop that has several magnitudes of more computing power than us. However, we are still, more or less, interested in the same questions. How can we solve a problem? (algorithm design) How fast can we solve problems? What's the quickest way to solve a problem? (algorithm / complexity analysis and optimization) 
 
-The field of algorithm design and complexity analysis is most closely a subset of theoretical computer science. "Applied computer science" would be, for example, software development, programming language creation, compilers, etc... Computer science curriculums nowadays are focused on both the theoretical and applied, even if a lot of computer science graduates pursue a software development career in the future. In other words, software development is a tiny subset of what computer science actually is.
-
 ### Overview
 
-Computer science can be seen as the field of studying and modeling problem solving; it is the study of algorithms, information, and computations. 
+Computer science can be seen as the field of studying and modeling problem solving; it is the study of algorithms, information, and computations. Theoretical computer science perhaps sets the foundation to the large field of computer science!
 
 ### References
 
