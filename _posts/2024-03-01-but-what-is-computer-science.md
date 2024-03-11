@@ -11,7 +11,7 @@ The first post (this one) will talk about computer science as the science of com
 
 ### A brief history on computer science
 
-Nowadays, the term "computer" and "laptop" is synonymous, but the field of computer science is not actually the study of "laptops"! Rather, it is the study of computation, algorithms, and information. In general, computer science is a widely applicable field. There's a joke that goes you can add "computational" to anything and it would be a legitimate field of study (i.e. Carnegie Mellon has a computational biology department, but graduate departments elsewhere often have computational physics, computational number theory, computational chemistry, etc). The underlying reason for this is that "mathematics" sets the foundation for the sciences and anything that uses mathematics has some degree of computation to it. Hence computer science is applicable to those fields. An amazing thing about that is that any contribution towards computer science indirectly contributes to countless other fields! 
+Nowadays, the term "computer" and "laptop" is synonymous, but the field of computer science is not actually the study of "laptops"! Rather, it is the study of computation, algorithms, and information. In general, computer science is a widely applicable field. In fact, usually you can add "computational" to anything and it would be a legitimate field of study (i.e. Carnegie Mellon has a computational biology department, but graduate departments elsewhere often have computational physics, computational number theory, computational chemistry, etc). The underlying reason for this is that "mathematics" sets the foundation for the sciences and anything that uses mathematics has some degree of computation to it. Hence computer science is applicable to those fields. An amazing thing about that is that any contribution towards computer science indirectly contributes to countless other fields! 
 
 #### Human computers
 While the term "computers" are mostly used in the context of laptops or personal computers, the actual word goes back several hundreds of years. Around the 1600's, "computers" used to be a term given to people who did arithmetic computations. 
@@ -37,3 +37,17 @@ Fast forward a few centuries and in 1623, we have Wilhelm Schickard who made the
 </p>
 
 As technology progressed, our ability to compute improved greatly. The average modern day computer can perform about 5 billion calculations PER SECOND!
+
+### The age of computers and information
+
+With the introduction of personal computers, the notion of "computers" as humans doing actual calculations have been replaced with a small laptop that has several magnitudes of more computing power than us. However, we are still, more or less, interested in the same questions. How can we solve a problem? (algorithm design) How fast can we solve problems? What's the quickest way to solve a problem? (algorithm / complexity analysis and optimization) 
+
+The field of algorithm design and complexity analysis is most closely a subset of theoretical computer science. "Applied computer science" would be, for example, software development, programming language creation, compilers, etc... Computer science curriculums nowadays are focused on both the theoretical and applied, even if a lot of computer science graduates pursue a software development career in the future. In other words, software development is a tiny subset of what computer science actually is.
+
+### Overview
+
+Computer science can be seen as the field of studying and modeling problem solving; it is the study of algorithms, information, and computations. 
+
+### References
+
+>[Computers (occupation)](https://en.wikipedia.org/wiki/Computer_(occupation))

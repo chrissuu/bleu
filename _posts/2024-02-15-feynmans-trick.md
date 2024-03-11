@@ -105,6 +105,6 @@ Feynman's trick can be seen as solving not just one integral but a family of int
 6. Plug in the value that makes the general solution into the specific solution
 7. Done!!
 
-References: 
+### References: 
 1. [Putnam 2005](https://kskedlaya.org/putnam-archive/2005.pdf)
 2. [Practice problems / further reading (UCONN)](https://kconrad.math.uconn.edu/blurbs/analysis/diffunderint.pdf)

@@ -8,17 +8,15 @@ tags: [math]
 >
 >From the book [Living Proof](https://www.ams.org/about-us/LivingProof.pdf) and a quote that one of my professors had written on our second homework assignment
 
-A few weeks ago, I was talking to my friend about what math is. Like me, he enjoys music, but he studies piano performance as well as English. As we were walking back to our dorm, he told me that he's not really a numbers person and that he always struggled in highschool math classes. 
+A few weeks ago, I was talking to my friend about what math is. Like me, he enjoys music, but he studies piano performance as well as English. As we were walking back to our dorm, he told me that he's not really a numbers person and that he always struggled in highschool math classes. He asked me whether he should try taking a math class here at CMU, hesitant because he had perhaps been discouraged in the past by people who just "understood" math. I encouraged him to try a math class and this post is dedicated to him -
 
-I'm sure a handful of other people are also in the same boat - they find math to be difficult. To be completely fair, some people definitely have a natural aptitude for mathematics and the sciences. But I think that the reason why math might be so difficult is because 
-
-In the same regard, I think math should be difficult, and because it's difficult, it's fun! (Nothing in life that's good for you and fun for you is also easy for you)
+I think math should be difficult, and because it's difficult, it's fun! (Nothing in life that's good for you and fun for you is also easy for you)
 
 ### But, what is math?
 
 In middle school and high school, most math classes have teachers throw a bunch of computational questions for you to do. For example, a common class this occurs in is precalculus or calculus, where students are asked to memorize a bunch of formulas for derivatives, trig rules, etc. Although computation is important for building your mathematical toolkit, it doesn't really teach you _why_ we learn these things. 
 
-In the next few sections I want to outline what _math_ is. (Of course, each section could have an entire post by itself)
+So what is math?
 
 ### Math as the study of phenomena (mathematical modeling)
 
@@ -89,7 +87,7 @@ The best class to take if you've struggled with or hated math in highschool, in 
 
 Good luck!
 
-References: 
+### References: 
 >[Living Proof](https://www.ams.org/about-us/LivingProof.pdf)
 >
 >[Mirifici Logarithmorum Canonis Descriptio](https://en.wikipedia.org/wiki/Mirifici_Logarithmorum_Canonis_Descriptio)
