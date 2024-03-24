@@ -155,7 +155,7 @@ Following is the code used to hypothesize about the expected value for arbitrary
 
 [Code]
 
-[Code]:{{ site.url }}/downloads/expected.txt
+[Code]:{{ site.url }}/bleu/downloads/expected.txt
 
 ### References
 
