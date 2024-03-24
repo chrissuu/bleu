@@ -151,9 +151,11 @@ QED
 
 ### Code
 
-Following is the code used to hypothesize about the expected value for arbitrary n.
+Following is the code used to hypothesize about the expected value for arbitrary n. 
 
-[Code](/assets/downloads/expected.txt)
+[Code]
+
+[Code]:{{ site.url }}/downloads/expected.txt
 
 ### References
 
