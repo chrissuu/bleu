@@ -79,11 +79,7 @@ Computations allow us to get from one place to another, but the skill of algebra
 
 ### Summary
 
-I think in some way, the education system has failed math: we start with tedious work with no rhyme or reason as to why we have to learn these tedious counterparts of a rather beautiful subject. It's sort of like climbing an apple tree to get an apple but by the time your highschool education ends, you either never get an apple or you do, but you don't taste how sweet it is. Once in college, the freedom of choosing your classes becomes greater, and those that struggled in highschool with mathematics might never look twice on taking another math class. 
-
-#### But where can I start?
-
-The best class to take if you've struggled with or hated math in highschool, in my opinion, is a class that teaches you mathematical modeling. Introduction to game theory, introduction to theoretical computer science, introduction to theoretical chemistry, introduction to discete mathematics, are all good classes that teach you "mathematical modeling", or the process of converting universe phenomena into math. That way, you get the best of both worlds: math as it is applied and math as it is computed. 
+I think in some way, the education system has failed math: we start with tedious work with no rhyme or reason as to why we have to learn these tedious counterparts of a rather beautiful subject. It's sort of like climbing an apple tree but by the time your highschool education ends, but you never get the chance to taste how sweet an apple is! Once in college, the freedom of choosing your classes becomes greater, and those that struggled in highschool with mathematics might never look twice on taking another math class. Introduction to game theory, introduction to theoretical computer science, introduction to theoretical chemistry, introduction to discete mathematics, are all good classes that teach you "mathematical modeling", or the process of converting universe phenomena into math. And in most senses, these classes are the ones that even laypeople could appreciate the beauty of. 
 
 Good luck!
 

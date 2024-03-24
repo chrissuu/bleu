@@ -1,14 +1,9 @@
 ---
 layout: post
 title: but, what is computer science? 
-subtitle: introduction to logic and computation (part 1)
-tags: [cs, math]
+subtitle: a laptop science
+tags: [cs]
 ---
-
-This is going to be a pretty dense post so I've split it up into three parts:
-
-The first post (this one) will talk about computer science as the science of computation and be an introduction to computer science. The second post will talk about a basic "model of computation" (more on that later). Lastly, the third post will talk about "Turing Machines" named after Alan Turing. Feel free to skip around.
-
 ### A brief history on computer science
 
 Nowadays, the term "computer" and "laptop" is synonymous, but the field of computer science is not actually the study of "laptops"! Rather, it is the study of computation, algorithms, and information. In general, computer science is a widely applicable field. In fact, usually you can add "computational" to anything and it would be a legitimate field of study (i.e. Carnegie Mellon has a computational biology department, but graduate departments elsewhere often have computational physics, computational number theory, computational chemistry, etc). The underlying reason for this is that "mathematics" sets the foundation for the sciences and anything that uses mathematics has some degree of computation to it. Hence computer science is applicable to those fields. An amazing thing about that is that any contribution towards computer science indirectly contributes to countless other fields! 
@@ -44,7 +39,7 @@ With the introduction of personal computers, the notion of "computers" as humans
 
 ### Overview
 
-Computer science can be seen as the field of studying and modeling problem solving; it is the study of algorithms, information, and computations. Theoretical computer science perhaps sets the foundation to the large field of computer science!
+Computer science can be seen as the field of studying and modeling problem solving; it is the study of algorithms, information, and computations. With the age of powerful computers however, we are still curious about the same problems, but now the computational foundation for computer science aren't humans crunching out numbers but rather "laptops" and "computers".
 
 ### References
 
