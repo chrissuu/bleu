@@ -30,9 +30,9 @@ I'll remind you of the few restrictions we have:
 1. We can't choose the order / which alien raises their hand (the aliens choose this)
 2. We can't give any information outside of the initial planning phase to our fellow humans
 
-Knowing this, what if the humans alternated assigning a red and black hat? Notice that we now have an invariant! Assigning the number $$i$$ to the ith human (for example the 1st human gets the number 1) that enters the room: # black hats - # white hats $$\equiv$$ $$i$$ mod $$2$$
+Knowing this, what if the humans alternated assigning a red and black hat? Notice that we now have an invariant! Assigning the number $$i$$ to the ith human (for example the 1st human gets the number 1) that enters the room: # black hats - # red hats $$\equiv$$ $$i$$ mod $$2$$
 
-Hence, after the 300th person assigns a hat to the 300th alien, # black hats - # white hats $$\equiv$$ $$300$$ mod $$2$$ which means # black hats - # white hats $$\equiv$$ $$0$$ mod $$2$$! When the Alien Captain takes his turn, he breaks this invariant! So the the last human can pick whichever of more hats there are. 
+Hence, after the 300th person assigns a hat to the 300th alien, # black hats - # red hats $$\equiv$$ $$300$$ mod $$2$$ which means # black hats - # red hats $$\equiv$$ $$0$$ mod $$2$$! When the Alien Captain takes his turn, he breaks this invariant! So the the last human can pick whichever of more hats there are. 
 
 For example, after the 300th alien, there are 150 red hats and 150 black hats. Regardless of which hat the Alien Captain chooses, we get either 151 red hats and 150 black hats OR 150 red hats and 151 black hats! Then the human just chooses the 151 hats and it is guaranteed to contain the Alien Captain!
 
@@ -44,7 +44,7 @@ It's not immediately obvious if we can do better. After all, we can only encode 
 
 Imagine if we can **"mark off"** certain aliens from being chosen at the end - as in, they are guaranteed not to be the Alien Captain. In the first example, that happened at the end when the captain chose his hat (and thus the opposite of his hat was guaranteed to not be the captain and hence all 150 of them were "marked off"). But this is sort of inefficient, don't you think? What if we can get more information dynamically instead of at the end?
 
-Here is the strategy I came up with:
+Here is the strategy we came up with:
 
 Split your aliens into n groups of k aliens (It's fine if your grouping has some stragglers). In my example below, I split it into groups of 30 so 1 will not be in a group. 
 

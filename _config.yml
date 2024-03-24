@@ -5,7 +5,7 @@ subtitle: bomp
 baseurl: "/bleu"
 
 profile-picture: assets/pngwing.com.png
-favicon_location: assets/favicon.ico
+favicon_location: assets/sky.png
 
 permalink: /:year-:month-:day-:title/
 sass:
