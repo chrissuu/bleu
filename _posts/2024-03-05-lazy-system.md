@@ -29,11 +29,11 @@ So we can expect that about 1 student will get their test back every time Dr. Bo
 
 ### A counting argument (a naive solution)
 
-Suppose there are n people in the class. 
+Suppose there are n people in the class. The expected value formula still stays the same:
 
-$$\textbf{E}[X] = \sum_{x \in \text{range}(X)} x \textbf{Pr}[X = x] = $$
+$$\textbf{E}[X] = \sum_{x \in \text{range}(X)} x \textbf{Pr}[X = x]$$
 
-There are $$n!$$ possible ways (permutations) that the tests can be given out, and we're interested in the probability that $$0 \leq k \leq n$$ people get their own test back. i.e, $$Pr[X = k]$$. 
+Hence, we want to find some closed form for $$\textbf{Pr}]X = x]$$. With n people, there are $$n!$$ possible ways (permutations) that the tests can be given out, and we're interested in the probability that $$0 \leq k \leq n$$ people get their own test back. i.e, $$Pr[X = k]$$. 
 
 If we imagine permutations as being bijections from a perfectly ordered set, we can think about how "fixed points" as being the students that get back their own test. i.e, given $$n$$ students and a bijective function $$f: [n] \rightarrow [n]$$, $$f(k) = k$$ would be a fixed point that also encodes the fact that student k got back their own test. 
 
@@ -148,6 +148,12 @@ And since there are n students, the probability that a student gets their own mi
 $$\textbf{E}[X] = \sum_{x = 1}^{n} \textbf{E}[I_x] =  \sum_{x = 1}^{n} \textbf{Pr}[I_x]  =\sum_{x = 1}^{n} \frac{1}{n} = 1 $$
 
 QED
+
+### Code
+
+Following is the code used to hypothesize about the expected value for arbitrary n.
+
+[Code](/assets/downloads/expected.txt)
 
 ### References
 

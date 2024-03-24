@@ -1,0 +1,70 @@
+
+import functools
+class Fraction:
+    def __init__(self, num, den):
+        self.num = num
+        self.den = den
+
+    
+    def __repr__(self) -> str:
+        return str(self.num) + "/" + str(self.den)
+    
+def gcd(x, y):
+    while(y):
+       x, y = y, x % y
+    return abs(x)
+
+def add(u,v):
+        newDen = u.den * v.den
+        sumUV = u.num * v.den
+        sumVU = v.num * u.den
+
+        newNum = sumUV + sumVU
+        while gcd(newNum, newDen) != 1:
+            g = gcd(newNum, newDen)
+            newNum = newNum / g
+            newDen = newDen / g
+
+        return Fraction(newNum, newDen)
+
+@functools.cache
+def der(v):
+    if v == 0:
+        return 1
+    
+    if v == 1:
+        return 0
+    
+    return (v-1) * (der(v-1) + der(v-2))
+
+@functools.cache
+def fac(v):
+    if v == 0:
+        return 1
+    
+    return v * fac(v-1)
+
+def pow(u, v):
+    if v == 0:
+        return 1
+    
+    return u * pow(u, v-1)
+
+def expected(n): #Run this function!! for arbitrary n
+    sum = Fraction(0,1)
+    for i in range(0,n+1):
+        a_i = Fraction((der(n-i)*i),(fac(i)*fac(n-i)))
+        sum = add(sum, a_i)
+
+    return sum
+
+
+def term(n):
+    sum = Fraction(0,1)
+    for i in range(0,n+1):
+        a_i = Fraction(i * pow(-1, n+1 - i),fac(i) * fac(n+1 - i))
+        sum = add(sum, a_i)
+
+    negotiator = Fraction(n+1, fac(n+1))
+
+    return add(negotiator, sum)

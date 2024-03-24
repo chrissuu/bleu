@@ -152,3 +152,5 @@ As an exercise, try to see if you can come up with a way to count the rational n
 >[Infinite Hotel Paradox (veritasium video)](https://youtu.be/OxGsU8oIWjY?feature=shared)
 >
 >[Diagonalization (wiki)](https://en.wikipedia.org/wiki/Cantor%27s_diagonal_argument)
+>
+>[Cantor (wiki)](https://en.wikipedia.org/wiki/Georg_Cantor)
