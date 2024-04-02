@@ -145,7 +145,7 @@ This technique was created by Cantor to prove that infinite sets actually have d
 
 With infinity, our intuition often betrays us, but not always! The real numbers feel uncountable because they really are! And Georg Cantor formalized this notion. His work allowed for us to reason about infinity and sets of different sizes! The applications are wide ranging, with a notable example being the Halting problem in computer science!
 
-As an exercise, try to see if you can come up with a way to count the rational numbers!!
+As an exercise, try to see if you can come up with a way to count the rational numbers.
 
 ### References
 
