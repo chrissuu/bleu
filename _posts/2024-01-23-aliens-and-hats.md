@@ -7,8 +7,6 @@ tags: [puzzle, math]
 
 As a first semi-technical post, I thought I would talk about a very interesting problem/puzzle from a class I am taking this year, theoretical computer science! (Or at least a variation of it)
 
-It stumped me and my friends for a while and we had to do a lot of thinking to come up with a solution!
-
 The question statement is as follows:
 
 > Suppose there are 301 aliens and 301 humans. The aliens are in a room and in a single file line (they can't move from this order once in the room). Now the humans are waiting outside, and they are also in a line! One by one, a human walks inside the room, and the aliens (in their gibberish language) pick a representative amongst them to raise their hand. The human, in his infinite wisdom, gives the alien that raised their hand either a black hat or a red hat, and that alien has to wear that hat. 
