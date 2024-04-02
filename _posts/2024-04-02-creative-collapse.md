@@ -6,7 +6,7 @@ tags: [cs, philosophy]
 ---
 ### Introduction
 
-Read the first post for an introduction! Here, we dive right into a rigorous statement of the problem and one of the most amazing implications of $$P=NP$$!
+Read the previous post for an introduction! Here, we dive right into a rigorous statement of the problem and one of the most amazing implications of $$P=NP$$!
 
 ### Formal statement of P vs. NP
 
