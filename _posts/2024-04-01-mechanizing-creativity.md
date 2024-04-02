@@ -113,7 +113,7 @@ In any case, we have completely removed creativity from problem solving!
 
 ### Overview
 
-As we have seen, the P vs. NP problem is a fundamental question that has impacts in all aspects of our life! Though this overview of this problem was very specific to creativity, it only touches on the very tip (but perhaps a large tip) of a gigantic iceberg. A $$P=NP$$ resolution would most likely change our lives in drastic ways! Most problems we have would be efficiently solvable without much creativity as part of the process. Perhaps the most creative part about problem solving, then, would be posing the right questions. In fact, it is without a doubt that asking the right questions is perhaps more important and insightful than answering them. 
+As we have seen, the P vs. NP problem is a fundamental question that has impacts in all aspects of our life! Though this overview of this problem was very specific to creativity, it only touches on the very tip (but perhaps a large tip) of a gigantic iceberg. A $$P=NP$$ resolution would most likely change our lives in drastic ways! Most problems we have would be efficiently solvable without much creativity as part of the process. Perhaps the most creative part about problem solving, then, would be posing the right questions. In fact, it is without a doubt that asking the right questions is perhaps just as important and insightful than answering them. 
 
 In either case, because of these perhaps utopic consequences, most computer scientists believe P to be NOT EQUAL to NP. However, this question still sits as the holy grail of computer science - whose resolution, ironically, awaits a fateful encounter with an even more creative mind!
 

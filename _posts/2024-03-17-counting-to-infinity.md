@@ -37,7 +37,7 @@ This makes pretty good sense so far, since, in a sense, whenever we count, we al
 
 #### Example 1
 
-Let's say box 1 has {1,2,3} and box 2 has {red, blue, green}. Since we can give red the label "1", blue the label "2", and green the label "3", the two things have the same size!
+Let's say box 1 has {1,2,3} and box 2 has {red, blue, green}. Since we can give red the label "1", blue the label "2", and green the label "3", the two boxes have the same size!
 
 But if box 1 has {1,2,3} and box 2 has {red, blue, green, yellow}, then we can't give yellow a label! So the two boxes must not have the same size.
 
