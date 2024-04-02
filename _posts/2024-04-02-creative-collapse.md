@@ -14,14 +14,13 @@ The P vs. NP question asks the following:
 
 Does the set of polynomial time decidable languages equal the set of polynomial time verifiable languages?
 
-Clearly, the set of polynomial time decidable languages is a set of polynomial time verifiable languages (NP). Hence, the question simplifies to whether all languages that can be verified in polynomial time also has an algorithm that decides it in polynomial time.
+Clearly, the set of polynomial time decidable languages is a subset of polynomial time verifiable languages (NP). Hence, the question simplifies to whether all languages that can be verified in polynomial time also has an algorithm that decides it in polynomial time.
 
-For the rest of this post, I will assume that you have familiarity with the following:
+For the rest of this post, I will assume that you have some familiarity with the following:
 
-1. NP - Hard, NP - Complete
-2. Cook vs Karp Reductions
-3. Verifiers
-4. Deciders
+1. Verifiers
+2. Deciders
+3. P vs. NP
 
 ### The mechanization of creativity
 
