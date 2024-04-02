@@ -1,7 +1,7 @@
 ---
 layout: post
 title: mechanizing creativity
-subtitle: a nonrigorous introduction to the P vs. NP problem
+subtitle: the holy grail of computer science
 tags: [cs, philosophy]
 ---
 ### Introduction
