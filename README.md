@@ -4,5 +4,4 @@ this blog is a mini project for one of my classes and I intend to post semi-freq
 
 Theme credits to user rhl-bthr (https://github.com/rhl-bthr)
 
-## License
-[GNU GPL v3](LICENSE)
+Website accessible through: (https://chrissuu.github.io/bleu/)
