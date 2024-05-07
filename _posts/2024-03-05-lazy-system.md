@@ -35,7 +35,7 @@ $$\textbf{E}[X] = \sum_{x \in \text{range}(X)} x \textbf{Pr}[X = x]$$
 
 Hence, we want to find some closed form for $$\textbf{Pr}]X = x]$$. With n people, there are $$n!$$ possible ways (permutations) that the tests can be given out, and we're interested in the probability that $$0 \leq k \leq n$$ people get their own test back. i.e, $$Pr[X = k]$$. 
 
-If we imagine permutations as being bijections from a perfectly ordered set, we can think about how "fixed points" as being the students that get back their own test. i.e, given $$n$$ students and a bijective function $$f: [n] \rightarrow [n]$$, $$f(k) = k$$ would be a fixed point that also encodes the fact that student k got back their own test. 
+If we imagine permutations as being bijections from some arbitrary (predetermined) ordered set, we can think about how "fixed points" as being the students that get back their own test. i.e, given $$n$$ students and a bijective function $$f: [n] \rightarrow [n]$$, $$f(k) = k$$ would be a fixed point that also encodes the fact that student k got back their own test. 
 
 If we can find how many bijective functions there are that keep $$k$$ points fixed (say $$N$$), we can find the probability that $$k$$ students get their own test back pretty easily: $$\frac{N}{n!}$$
 
