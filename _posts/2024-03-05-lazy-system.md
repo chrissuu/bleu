@@ -2,7 +2,7 @@
 layout: post
 title: lazy system
 subtitle: lazy, lazy, lazyyy
-tags: [probability, math]
+tags: [math, probability]
 ---
 
 In Dr. Bob's physics lab, Dr. Bob always seems to go past class time! Instead of fixing his time management, on the days that he has to return his student's tests, he hands them out randomly to save time!!!
