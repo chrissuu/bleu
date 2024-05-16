@@ -123,7 +123,7 @@ $$f_n = \frac{\varphi^{n} -  (-\varphi)^{-n}}{\sqrt{5}}$$
 
 ### Overview
 
-Linear algebra is an interesting perspective on solving linear recurrence relations. It allows us to come to a closed form solution in a really elegant way! The fibonacci sequence is a textbook example of linearn recurrence relations, but see if you can derive other closed forms using the tools from linear algebra!
+Linear algebra is an interesting perspective on solving linear recurrence relations. It allows us to come to a closed form solution in a really elegant way! The fibonacci sequence is a textbook example of linear recurrence relations, but see if you can derive other closed forms using the tools from linear algebra!
 
 ### References
 
