@@ -82,7 +82,7 @@ We can generalize this to $$N$$ regular languages.
 
 Let $$L_1, L_2, L_3, ... , L_N$$ be regular languages.
 
-Then, $$\bigcup\limits_{i = 1}^{N} L_i$$ is also regular. (For $$N = \in \mathbb{N}, N >= 2$$)
+Then, $$\bigcup\limits_{i = 1}^{N} L_i$$ is also regular. (For $$N \in \mathbb{N}, N >= 2$$)
 
 The proof is simple and follows from induction.
 
