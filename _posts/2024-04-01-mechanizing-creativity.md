@@ -78,7 +78,7 @@ Let problem P be your favorite problem (this can be anything, but I'll use an eq
 
 P = "Is the Riemann hypothesis true?"
 
-Then, since the process of verifying proofs is efficient, we can expect that there is an efficient algorithm that solves the probmem P, "Is the Riemann hypothesis true?", efficiently! So just plug P into this algorithm and return the output! No creativity needed here!
+Then, since the process of verifying proofs is efficient, we can expect that there is an efficient algorithm that solves the problem P, "Is the Riemann hypothesis true?", efficiently! So just plug P into this algorithm and return the output! No creativity needed here!
 
 #### Nail in the coffin
 
