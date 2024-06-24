@@ -9,9 +9,7 @@ hi, i'm chris, a freshman at Carnegie Mellon University in Pittsburgh PA. my int
 
 this blog is a mini project for one of my classes and I intend to post semi-frequently on interesting problems/puzzles/lecture notes from my classes, everyday life, or just some random things here and there that I come across!
 
-you can reach me by email: 
+for if you want to reach out or find any bugs / typos: 
 
 > chrisssu19@gmail.com (Personal)
->
-> chrissu@andrew.cmu.edu (Work)
 
