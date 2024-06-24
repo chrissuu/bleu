@@ -2,7 +2,7 @@
 layout: post
 title: classrank ep1
 subtitle: ranking the classes I took, year 1 @ CMU
-tags: [cmu]
+tags: [random]
 ---
 
 ### Introduction

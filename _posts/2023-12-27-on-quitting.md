@@ -2,7 +2,7 @@
 layout: post
 title: quit for quat
 subtitle: how to quit (the right way)
-tags: [life]
+tags: [random]
 ---
 
 When I was around 6 years old, I took my first piano lessons at this old rustic house in Palisades Park, New Jersey, along with my younger sister. Our teacher would teach us the notes and some basic piano techniques. I remember the cover of that yellow Hanon book (tattered, with all her other students). At the end of our lesson, she would give me and my sister those red and white peppermints wrapped in plastic - this was a weekly occurrence until our teacher had to move and we got a new teacher, this time located in the highest floor of a large apartment building. The piano was an old Yamaha and our new teacher was similarly enthusiastic about teaching, but neither I nor my sister had any interest in playing piano anymore. By the time I started the 3rd grade, I asked my parents if I could quit and me, along with my sister who did the same thing as I did, got to quit piano. 
