@@ -9,7 +9,7 @@ hi, i'm chris, a sophomore ('27) at Carnegie Mellon University in Pittsburgh PA.
 
 i enjoy a wide variety of topics, mainly: physics, mathematics, statistics, artificial intelligence. 
 
-in the past, i have been involved with several software projects as well as internships.
+in the past, i have been involved with several software projects.
 
 this blog is a mini project for one of my classes and I intend to post semi-frequently on interesting problems/puzzles/lecture notes from my classes, everyday life, or just some random things here and there that I come across!
 
