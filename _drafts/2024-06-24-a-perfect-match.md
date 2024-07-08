@@ -12,15 +12,19 @@ While the idea of matchings are ubiquitous in many applications, the first part 
 
 ### Definitions
 
-#### Matching
+#### Matching(s)
 
 Given a graph $$G = \(V, E\)$$, we say that $$M \subseteq E$$ is a matching if none of the edges in $$M$$ share a vertex with another edge in $$M$$. 
 
 Pictorally, an example is given below:
 
+There are also definitions for perfect matchings, which as you might imagine are matchings in which the node set covers the entire graph.
 
+#### 
 
 ### Overview
+
+
 
 
 ### References
