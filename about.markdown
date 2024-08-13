@@ -5,7 +5,7 @@ title: About Me
 
 <img class="profile-picture" src="{{site.baseurl}}/{{site.profile-picture}}">
 
-hi, i'm chris, a sophomore ('27) at Carnegie Mellon University in Pittsburgh PA.
+hi, i'm **chris**, a sophomore ('27) at Carnegie Mellon University in Pittsburgh PA.
 
 i enjoy a wide variety of topics, mainly: physics, mathematics, statistics, and the intersections between them.
 
