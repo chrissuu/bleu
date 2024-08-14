@@ -1,7 +1,7 @@
 ---
 layout: post
-title: a blind dive into spectral graph theory
-subtitle: how to invent math
+title: spectral graph theory
+subtitle: a blind dive into spectral graph theory?
 tags: [math, graph theory]
 ---
 

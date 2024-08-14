@@ -34,7 +34,7 @@ Instead, Hinge will take a subset of people, based on these initial preferences,
 
 This is where Gale-Shapley will first be used. Your Hinge "recommended" feed will be comprised of your most compatible (stable) matching, based on these precomputed preference lists. 
 
-One problem, though: Gale-Shapley will only output one matching! This is inconsistent with what we know about Hinge: that is, Hinge gives you a feed of people / potential partners. So how do we get more potential partners?
+One problem though: Gale-Shapley will only output one matching! This is inconsistent with what we know about Hinge. That is, Hinge gives you a *feed* of people / potential partners. So how do we get more potential partners?
 
 This is where ML plays a significant role: depending on who you interact with, your preference list will be updated and Gale-Shapley will be recomputed on these new preference lists. When preference lists are updated, the stable matching outputted by Gale-Shapley will also change due to the large userbase of Hinge. 
 
@@ -70,7 +70,7 @@ Gale-Shapley (the first time around) will compute the matchings on all of Billy'
 >
 >College: NYU
 
-Even though Billy's age is not 23, 24, or 25, and his location is not NJ, small changes in his profile allows for newer stable matches to be created. This allows for other people to see Billy in their recommended feed. No one will exactly fit everyone's dating preferences, so these compromises make decent sense. Add on to the fact that the matchings are guaranteed to be stable, Hinge's success is likely due to their robust ML model that creates the initial preference lists. 
+Even though Billy's age is not 23, 24, or 25, and his location is not NJ, small changes in his profile allows for more stable matches to be created. This allows for more people to see Billy in their recommended feed. No one will exactly fit everyone's dating preferences, so these compromises make sense. Add on to the fact that the matchings are guaranteed to be stable, Hinge's success is likely due to their robust ML model that creates the initial preference lists. 
 
 ### Overview
 
