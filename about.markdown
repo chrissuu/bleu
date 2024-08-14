@@ -13,8 +13,6 @@ in the past, i have been involved with several software projects.
 
 this blog is a mini project for one of my classes and I intend to post semi-frequently on interesting problems/puzzles/lecture notes from my classes, everyday life, or just some random things here and there that I come across!
 
-i believe in academic transparency. hence, some of the posts will have the [cmu] tag, which will usually describe some cmu/job search first hand accounts.
-
-if you want to reach out, contribute a post, or find any bugs / typos, email me with the header [bleu]: 
+if you want to reach out, contribute a post, or find any bugs / typos / mistakes in my writing, email me with the header [bleu]: 
 
 > chrisssu19@gmail.com
