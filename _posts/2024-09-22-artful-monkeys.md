@@ -118,19 +118,19 @@ To put that in perspective, there are only $$10^{80}$$ atoms in the universe. Th
 
 The cool thing about abstraction, however, is that we can also make our alphabet consist of **words** instead of the symbols that make up our alphabet. 
 
-There are roughly $$170,000$$ words in the English language and according to my python script, about $$32,000$$ words in Hamlet.
+There are roughly $$170,000$$ words in the English language and according to my python script, about $$8,000$$ **unique** words in Hamlet.
 
-For the same chance of producing Hamlet as above, we would need at least $$170,000^{32,000} \approx 2^{544,000}$$ monkeys. That is significantly less monkeys! 
+For the same chance of producing Hamlet as above, we would need at least $$170,000^{8,000} \approx 2^{144,000}$$ monkeys. That is significantly less monkeys! 
 
 Now, suppose we restricted our alphabet to ONLY the words that were used in Hamlet. How many monkeys would we need to guarantee about a $$50\%$$ chance? 
 
-$$32,000^{32,000} \approx 2^{480,000}$$
+$$8,000^{8,000} \approx 2^{104,000}$$
 
 ### Final Remarks
 Okay, that's enough experimenting... I honestly thought that final number would be a lot less, but it's still overkill... maybe next time I can try deriving the "almost Hamlet" property for infinite monkeys. That is, how many monkeys would I need to guarantee about a $$50\%$$ chance that they produce a text that is "almost Hamlet"?
 
 ### References
 
->[Infinite Monkeys]()
->
 >[The guy on github that gave me a hamlet txt file](https://gist.github.com/provpup/2fc41686eab7400b796b#file-hamlet-txt)
+>
+>[The guy on reddit discovering infinity](https://www.reddit.com/r/Existentialism/comments/16hcfi6/no_fucking_chance_would_infinite_monkeys_with/)
