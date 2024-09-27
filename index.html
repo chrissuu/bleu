@@ -3,10 +3,22 @@ layout: default
 ---
 
 <div class="filter-bar">
-    <button class="tab-button" data-filter="all" onclick="filterPosts('all')">All Posts</button>
-    <button class="tab-button" data-filter="rigorous" onclick="filterPosts('rigorous')">Rigorous Posts</button>
-    <button class="tab-button" data-filter="nonrigorous" onclick="filterPosts('nonrigorous')">Nonrigorous Posts</button>
+    <span class="tab-button-container">
+        <button class="tab-button" data-filter="all" onclick="filterPosts('all')">[all]</button>
+    </span>
+    <span class="vertical-bar">|</span>
+    <span class="tab-button-container">
+        <button class="tab-button" data-filter="nonrigorous" onclick="filterPosts('nonrigorous')">dawn</button>
+    </span>
+    <span class="vertical-bar">|</span>
+    <span class="tab-button-container">
+        <button class="tab-button" data-filter="rigorous" onclick="filterPosts('rigorous')">dusk</button>
+    </span>
+    <span class="description-separator"> &gt;&gt;</span>
+    <div class="description" id ="description">all posts</div>
 </div>
+
+
 
 <div id = "posts-container">
     {% assign has_post = false %}
@@ -50,48 +62,128 @@ layout: default
 
 
 <script>
-function filterPosts(tag) {
-    var posts = document.querySelectorAll('.post-card');
-    var separators = document.querySelectorAll('.post-separator')
-    // console.log(tag)
-    console.log(posts.length);
-    console.log(separators.length);
-    posts.forEach(function(post, index) {
-        // console.log(post.getAttributeNames());
-        
-        var postType = post.getAttribute('type');
-        // console.log(postType)
+    function filterPosts(tag) {
+        var posts = document.querySelectorAll('.post-card');
+        var separators = document.querySelectorAll('.post-separator')
+        // console.log(tag)
+        console.log(posts.length);
+        console.log(separators.length);
+        posts.forEach(function(post, index) {
+            // console.log(post.getAttributeNames());
+            
+            var postType = post.getAttribute('type');
+            // console.log(postType)
 
-        if (tag === 'all') {
-            post.style.display = 'block';
-            separators[index].style.display="block";
-        }
-        else if (tag === 'rigorous' && postType === 'r') {
-            // console.log("RIGOROUS");
-            post.style.display = 'block';
-            separators[index].style.display="block";
-        }
-        else if (tag === 'nonrigorous' && postType === 'nr') {
-            // console.log("NONRIGOROUS");
-            post.style.display = 'block';
-            separators[index].style.display="block";
-        } else {
-            post.style.display = 'none';
-            separators[index].style.display="none";
-        }
-        console.log("Post:", post.querySelector('.title').innerText, "Display:", post.style.display);
-    });
+            if (tag === 'all') {
+                post.style.display = 'block';
+                separators[index].style.display="block";
+            }
+            else if (tag === 'rigorous' && postType === 'r') {
+                // console.log("RIGOROUS");
+                post.style.display = 'block';
+                separators[index].style.display="block";
+            }
+            else if (tag === 'nonrigorous' && postType === 'nr') {
+                // console.log("NONRIGOROUS");
+                post.style.display = 'block';
+                separators[index].style.display="block";
+            } else {
+                post.style.display = 'none';
+                separators[index].style.display="none";
+            }
+            console.log("Post:", post.querySelector('.title').innerText, "Display:", post.style.display);
+        });
 
-    changeBackground(tag);
-}
-
-function changeBackground(tag) {
-    var body = document.body;
-    if (tag === 'rigorous') {
-        body.style.backgroundImage = "/assets/IMG_9414.jpg";  // Replace with your image path
-    } else if (tag === 'nonrigorous') {
-        body.style.backgroundImage = "/assets/IMG_9414.jpg";    // Replace with your image path
+        changeTheme(tag);
+        updateButtons(tag);
     }
-}
+
+    function duskTheme(body) {
+        // body.style.backgroundImage = "url('/assets/minimal-night.webp')";  // Replace with your image path
+        // body.style.backgroundAttachment = 'fixed';
+        // body.style.backgroundRepeat = 'no-repeat';
+        // body.style.backgroundSize = 'auto 100%';
+    }
+
+    function dawnTheme(body) {
+        // body.style.backgroundImage = "url('/assets/minimal-night.webp')";    // Replace with your image path
+
+    }
+
+    function regularTheme(body) {
+
+    }
+
+    function changeTheme(tag) {
+        var body = document.body;
+        
+        if (tag === 'rigorous') {
+            duskTheme(body);
+
+        } else if (tag === 'nonrigorous') {
+            dawnTheme(body);
+        }
+
+        else {
+            regularTheme(body);
+        }
+    }
+
+    function updateButtons(filter) {
+        let descriptionText = '';
+
+        const map = new Map();
+
+        map.set('nonrigorous', 'dawn');
+        map.set('rigorous', 'dusk');
+        map.set('all', 'all');
+
+        switch(filter) {
+            case 'all':
+                descriptionText ='all posts';
+                break;
+            case 'rigorous':
+                descriptionText = 'semi-rigorous';
+                break;
+            case 'nonrigorous':
+                descriptionText = 'gentle and layman';
+                break;
+        }
+
+        // document.getElementById('description').innerText = descriptionText;
+
+        typeWriterEffect(descriptionText);
+        
+        document.querySelectorAll('.tab-button').forEach(button => {
+            button.innerText = button.dataset.filter === filter ? `[${map.get(button.dataset.filter)}]` : map.get(button.dataset.filter);
+        })
+    }
+
+    let typingInterval; // Variable to hold the typing interval
+    let currentMessage = ''; // Variable to hold the current message
+
+    function typeWriterEffect(message) {
+        // Clear the previous typing interval if it exists
+        clearInterval(typingInterval);
+        const descriptionElement = document.getElementById('description');
+        descriptionElement.innerText = ''; // Clear previous text
+        currentMessage = message; // Store the current message
+        let i = 0;
+        const speed = 60; // Speed of typing in milliseconds
+
+        typingInterval = setInterval(() => {
+            if (i < currentMessage.length) {
+                const char = currentMessage.charAt(i);
+                // Use a non-breaking space to preserve spaces
+                descriptionElement.innerText += (char === ' ') ? '\u00A0' : char;
+                i++;
+            } else {
+                clearInterval(typingInterval); // Stop typing when done
+            }
+        }, speed);
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+            typeWriterEffect("all posts"); // Change this to any message you want to display initially
+    });
 </script>
-    

@@ -69,6 +69,48 @@ code {
     }
 }
 
+// Filter bar
+.filter-bar {
+    display: flex;
+    align-items: center; /* Vertically centers the buttons */
+}
+
+.tab-button {
+    color: $accent;
+    border: none;
+    // padding: 10px 20px;
+    cursor: pointer;
+    background-color: transparent;
+    font-size: 13px;
+}
+
+// .tab-button:hover {
+//     background-color: #0056b3; /* Darker shade on hover */
+// }
+
+.vertical-bar {
+    // margin: 0 10px; /* Space around the vertical bar */
+    // font-size: 24px; /* Adjust size as needed */
+    color: #333; /* Color of the vertical bar */
+    background-color: transparent;
+}
+
+.description-separator {
+    // margin: 0 10px; /* Space around the vertical bar */
+    // font-size: 24px; /* Adjust size as needed */
+    color: #333; /* Color of the vertical bar */
+    background-color: transparent;
+    margin: 0 5px;
+}
+
+.description {
+    color: #333; /* Color of the vertical bar */
+    background-color: transparent;
+    font-size: 14px;
+    
+}
+
+
 // index
 .post-card{
     margin-top:1em;
