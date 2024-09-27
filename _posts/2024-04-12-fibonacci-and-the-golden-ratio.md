@@ -3,6 +3,7 @@ layout: post
 title: spectral theory for fibonacci
 subtitle: an interesting application of linear algebra
 tags: [math, linear algebra]
+type: nr
 ---
 
 ### Introduction

@@ -3,6 +3,7 @@ layout: post
 title: infinite, infinite primes
 subtitle: a proof of infinite primes using finite automata
 tags: [math, cs]
+type: r
 ---
 
 ### Introduction

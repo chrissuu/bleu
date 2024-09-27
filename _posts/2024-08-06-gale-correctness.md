@@ -3,6 +3,7 @@ layout: post
 title: gale-shapley is perfect
 subtitle: the stable marriage problem (pt2)
 tags: [cs, graph theory]
+type: r
 ---
 
 ### Introduction

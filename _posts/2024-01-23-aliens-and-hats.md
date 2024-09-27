@@ -3,6 +3,7 @@ layout: post
 title: the 301 aliens and 301 humans
 subtitle: can you beat the aliens???
 tags: [math, puzzle]
+type: nr
 ---
 
 As a first semi-technical post, I thought I would talk about a very interesting problem/puzzle from a class I am taking this year, theoretical computer science! (Or at least a variation of it)

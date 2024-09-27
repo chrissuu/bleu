@@ -3,6 +3,7 @@ layout: post
 title: how to hinge
 subtitle: the stable marriage problem (pt3)
 tags: [cs, graph theory]
+type: nr
 ---
 
 ### Introduction

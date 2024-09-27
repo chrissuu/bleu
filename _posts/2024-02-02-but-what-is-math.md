@@ -3,6 +3,7 @@ layout: post
 title: but, what is math?
 subtitle: a high level overview of the age old question
 tags: [math]
+type: nr
 ---
 >There are no such people. People who succeed in mathematics, like people who learn a musical instrument or a new language, spend a lot of time not understanding and feeling frustration. The path to understanding in mathematics necessarily involves, in the words of Steve Klee (4), being willing to struggle.” It is strange that people do not understand this about mathematics when it is commonplace in essentially every other field of human endeavor. The people whose stories are in this book clearly understand this fact. Some of them, for example Lola Thompson (7) and Laura Taalman (8), avidly embrace the struggle, they seek out the experience of frustration and confusion because they have realized that persistence in the face of difficulty leads to the rewards of learning and growth.
 >

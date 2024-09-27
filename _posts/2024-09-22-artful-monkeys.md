@@ -3,6 +3,7 @@ layout: post
 title: artful monkeys
 subtitle: the story of Monkey D. Shakespeare
 tags: [math, probability]
+type: r
 ---
 ### Introduction
 The infinite monkey theorem says that a monkey (or infinite monkeys), given some finite time $$t$$ will eventually type out all of Hamlet. 

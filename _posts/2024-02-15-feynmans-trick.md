@@ -3,6 +3,7 @@ layout: post
 title: feynman's integral trick!
 subtitle: feynman's integral trick, made by Leibniz?
 tags: [math]
+type: r
 ---
 
 The motivation for this post comes from a putnam problem I came across the other day (A5 problem from Putnam 2005, linked below):

@@ -3,6 +3,7 @@ layout: post
 title: building the future
 subtitle: a gentle thought experiment
 tags: [ai, random]
+type: nr
 ---
 
 On the 15th of December, 2114, physicist Ernest Rapour receives an invitation to a party dated for 28th of June, 2009. The host is another physicist by the name Stephen Hawking, who had passed away a century prior. 

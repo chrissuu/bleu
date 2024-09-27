@@ -3,6 +3,7 @@ layout: post
 title: but, what is computer science? 
 subtitle: a laptop science
 tags: [cs]
+type: nr
 ---
 ### A brief history on computer science
 
