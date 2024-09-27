@@ -13,6 +13,12 @@ in the past, i have been involved with several software projects.
 
 this blog is a mini project for one of my classes and I intend to post semi-frequently on interesting problems/puzzles/lecture notes from my classes, everyday life, or just some random things here and there that I come across!
 
-if you want to reach out, contribute a post, or find any bugs / typos / mistakes in my writing, email me with the header [bleu]: 
+if you want to reach out, contribute a post idea, or find any bugs / typos / mistakes in my writing, email me with the header [bleu]: 
 
 > chrisssu19@gmail.com
+
+<p align = "left">
+  <img src="../assets/IMG_9414.jpg" width = "400"/>
+</p>
+
+
