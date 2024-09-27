@@ -106,10 +106,25 @@ code {
 .description {
     color: #333; /* Color of the vertical bar */
     background-color: transparent;
-    font-size: 14px;
+    font-size: 13px;
+    border-right: 1.5px solid #000000; /* Cursor effect */
+    display: inline-block; /* To keep the cursor effect in place */
+    white-space: nowrap; /* Prevent text wrapping */
+    overflow: hidden; /* Hide overflowing text */
+    animation: blink 0.75s step-end infinite; /* Cursor blinking effect */
     
 }
 
+@keyframes blink {
+    50% {
+        border-color: transparent; /* Blink effect */
+    }
+}
+
+.blinking {
+    border-right: 1.5px solid #000000; /* Blinking cursor */
+    animation: blink 0.75s step-end infinite; /* Cursor blinking effect */
+}
 
 // index
 .post-card{
