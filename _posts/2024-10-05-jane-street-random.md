@@ -114,27 +114,9 @@ In fact, these balls are exactly the design on the shirt! Here's the shirt again
 
 Notice the orange regions are where there is an odd number of balls overlapping, and blue regions are even number of balls. Since $$0$$ is even, most of the region is blue!
 
-Now, recall that the "volume" of a cylinder is $$\pi * r^2 * h$$, where $$h$$ is height and $$r$$ is radius. However, for the special case $$h=1$$, the volume is equivalent to the area of a ball! 
-
-$$\int\limits_0^1\int\limits_0^1f(x,y) dxdy= \text{ the area of all balls in the event that the number of ball coverings is odd}$$
-
-And thus:
-
-$$\mathbb{E}\Bigl[\int\limits_0^1\int\limits_0^1f(x,y) dxdy\Bigr ] = \text{ the expected area of regions covered by an odd number of balls}$$
-
-Using the linearity of expectation:
-
-$$\mathbb{E}\Bigl[\int\limits_0^1\int\limits_0^1f(x,y) dxdy\Bigr ] = \mathbb\int\limits_0^1\int\limits_0^1\mathbb{E}\Bigl[f(x,y)\Bigr] dxdy$$
-
-And using the probability of a indicator random variable (which says that $$\mathbb{E}(\mathbb{I}_\textbf{E}) = \mathbb{P}(E)$$):
-
-$$\Bigl[\mathbb\int\limits_0^1\int\limits_0^1\mathbb{E}\Bigl[\Bigl(\sum\limits_{i=1}^{n}\mathbb{1}_{B(X_i, r_i)}(x) \text{ mod } 2 \Bigr)= 1\Bigr] = \mathbb\int\limits_0^1\int\limits_0^1\mathbb{P}\Bigl[\Bigl(\sum\limits_{i=1}^{n}\mathbb{1}_{B(X_i, r_i)}(x) \text{ mod } 2 \Bigr)= 1\Bigr] dxdy$$
-
 ### Conclusion
 At this point, I've realized that finding a numerical solution to this problem likely won't lead to any interesting insights... the most interesting connection was how the design could have been constructed! A random process fully describes the design on Jane Street's shirt! Case closed.
 
 ### References
 
->[The guy on github that gave me a hamlet txt file](https://gist.github.com/provpup/2fc41686eab7400b796b#file-hamlet-txt)
->
->[The guy on reddit discovering infinity](https://www.reddit.com/r/Existentialism/comments/16hcfi6/no_fucking_chance_would_infinite_monkeys_with/)
+>[Jane Street Capital](https://www.janestreet.com/)
