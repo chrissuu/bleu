@@ -3,6 +3,7 @@ author: chrissu
 subtitle: bomp
 
 baseurl: "/bleu"
+destination: ./_site/bleu
 
 profile-picture: assets/pngwing.com.png
 favicon_location: assets/sky.png
