@@ -18,7 +18,7 @@ def is_valid_date_format(date)->bool:
 def is_valid_tags_format(tags)->bool:
     '''Returns True if the tags format is valid'''
     
-    if tags[0] != '[' or tags[1] != ']':
+    if tags[0] != '[' or tags[-1] != ']':
         return False
 
     return True 
@@ -28,8 +28,11 @@ def parse_input(input):
     return True if input == 'y' else False
 
 def parse_post_name(post_name):
-    filtered = str(filter(lambda x : x != '-', post_name))
-
+    filtered = ""
+    for char in post_name:
+        if char != "-":
+            filtered += char
+    
     split_post_name = filtered.split(' ')
     return '-'.join(split_post_name)
     
@@ -65,13 +68,17 @@ file_post_name = parse_post_name(i_post_name)
 file_path = str(date) + "-" + str(file_post_name)
 
 '''Setting File Contents'''
-
-f = open(f"_posts/{file_path}", 'w')
+print(f"\nFILE PATH: {file_path}\n")
+f = open(f"_posts/{file_path}.md", 'w')
 f.write('---\n')
 f.write('layout: post\n')
 
 # POST TITLE
 i_post_title = input('Use file post name as post title? [y/n]\n')
+
+while i_post_title != 'y' and i_post_title != 'n':
+    i_post_title = input('Please enter either \'y\' or \'n\'')
+
 b_post_title = parse_input(i_post_title)
 
 if i_post_title:
@@ -83,7 +90,7 @@ else:
 # POST SUBTITLE
 i_subtitle = input('Enter a post subtitle:\n')
 
-while i_subtitle != "":
+while i_subtitle == "":
     i_subtitle = input('An empty subtitle is not valid. Please re-enter:')
 
 f.write(f"subtitle: {i_subtitle}\n")
@@ -99,4 +106,16 @@ f.write(f"tags: {i_tags}\n")
 
 
 # POST TYPE
-i_post_name = input('Rigorous post name?'
+i_post_type = input('Rigorous post type? [y/n]')
+
+while i_post_type != 'y' and i_post_type != 'n':
+    i_post_type = input('Please enter either \'y\' or \'n\'')
+
+b_post_type = parse_input(i_post_type)
+
+if b_post_type:
+    f.write("type: r\n")
+else:
+    f.write("type: nr\n")
+
+f.write('---')
