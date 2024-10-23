@@ -38,7 +38,7 @@ The next thing I noticed was the boldface $$\mathbb{1}$$, which, in the context 
 
 From the naming of $$X_i$$ and $$r_i$$, we can reasonably deduce that $$B(X_i, r_i)$$ which is the subscript of the bolded $$\mathbb{1}$$, might be referring to a shaded circle $$c_i \subset \mathbb{R}^2$$, centered at some $$x = X_i$$, with radius $$r = r_i$$. 
 
-The notation was a little ambiguous for my preference, but since the integral is being taken over a subset of $$\mathcal{R}^2$$, the variable $$x$$ is actually the coordinate pair that uniquely defines points in $$\mathcal{R}^2$$. 
+The notation was a little ambiguous for my preference, but since the integral is being taken over a subset of $$\mathbb{R}^2$$, the variable $$x$$ is actually the coordinate pair that uniquely defines points in $$\mathbb{R}^2$$. 
 
 This conveniently aligns with the above definitions for Indicator Variables and Balls!
 
