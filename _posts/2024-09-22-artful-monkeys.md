@@ -23,7 +23,7 @@ Let $$M$$ be a machine that, at some time $$t_i$$, outputs a single symbol, from
 
 That is: $$\forall a_i \in \mathcal{A}, \textbf{Pr}\bigl[a_i \text{ is picked}\bigr] = \frac{1}{\textbf{card}(\mathcal{A})}$$
 
-In code, it could be defined, pseudo-code-wise as, where $$A$$ is implemented as a set-like list (no duplicate elements, but ordered):
+For example, in code, it could be implemented like so: 
 
 >(1)def M(alphabet A):
 >
@@ -31,11 +31,13 @@ In code, it could be defined, pseudo-code-wise as, where $$A$$ is implemented as
 >
 >(3)&emsp;&emsp;return A[rand_int]
 
+Where $$\mathcal{A}$$ is a set-like list (no duplicate elements, but ordered).
+
 Simply for closure, we will also include a special element in our alphabet, **EOF**, such that if the machine ever produces the **EOF** symbol, it will terminate all future actions. This helps us capture the notion of finite strings.
 
 Lastly, we say that a machine $$M$$ **produces** a string $$s$$ iff for some time $$t_i, i \in [0, n)$$, that $$M(\mathcal{A}) = s_i$$ and at time $$t_{n}$$, $$M(\mathcal{A}) = \textbf{EOF}$$. 
 
-In code, we could define it pseudo-code-wise as:
+In code, we could define it like so:
 
 >(1)def M(alphabet A):
 >

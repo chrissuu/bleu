@@ -1,8 +1,8 @@
 ---
 layout: post
-title: what does the shirt say?
+title: what does the shirt say? 
 subtitle: decoding jane street 
-tags: [math, probability]
+tags: [math, probability] 
 type: r
 ---
 ### Introduction
@@ -32,7 +32,7 @@ This also aligns with the Expectation symbol, $$\mathbb{E}$$!
 
 **Indicator Variables**
 
-The next thing I noticed was the boldface $$\mathbb{1}$$, which, in the context of probability, could only mean an indicator variable! 
+The next thing I noticed was the boldface $$\mathbb{1}$$, which, in the context of probability, could only mean an indicator variable!
 
 **Balls**
 
