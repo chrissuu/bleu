@@ -81,7 +81,7 @@ while i_post_title != 'y' and i_post_title != 'n':
 
 b_post_title = parse_input(i_post_title)
 
-if i_post_title:
+if b_post_title:
     f.write(f"title: {i_post_name}\n")
 else:
     post_title = input('Enter a post title:\n')
@@ -100,16 +100,16 @@ f.write(f"subtitle: {i_subtitle}\n")
 i_tags = input('Enter tags in a pythonic list:\n')
 
 while not is_valid_tags_format(i_tags):
-    i_tags = input('Tags were not of the correct format. Please re-enter:')
+    i_tags = input('Tags were not of the correct format. Please re-enter:\n')
 
 f.write(f"tags: {i_tags}\n")
 
 
 # POST TYPE
-i_post_type = input('Rigorous post type? [y/n]')
+i_post_type = input('Rigorous post type? [y/n]\n')
 
 while i_post_type != 'y' and i_post_type != 'n':
-    i_post_type = input('Please enter either \'y\' or \'n\'')
+    i_post_type = input('Please enter either \'y\' or \'n\'\n')
 
 b_post_type = parse_input(i_post_type)
 
