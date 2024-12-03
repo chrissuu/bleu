@@ -1,6 +1,4 @@
 ## bleu
-This blog is a mini project for one of my classes and I intend to post semi-frequently on interesting problems/puzzles/lecture notes from my classes, everyday life, or just some random things here and there that I come across!
-
 Link: (https://www.chrissuu.com/bleu)
 
 Link (github pages, old): (https://chrissuu.github.io/bleu)
