@@ -3,7 +3,7 @@ layout: post
 title: mechanizing creativity
 subtitle: the holy grail of computer science
 tags: [cs, philosophy]
-type: nr, f
+type: nr
 ---
 ### Introduction
 
