@@ -3,17 +3,17 @@ layout: post
 title: mechanizing creativity
 subtitle: the holy grail of computer science
 tags: [cs, philosophy]
-type: nr
+type: nr, f
 ---
 ### Introduction
 
 Imagine a world where creativity played no role in the problems we faced. 
 
-To reason about this, let's think about creativity and its implications. Usually when we talk about innovation, we think about how a person has innovated something: this process is creative, since otherwise, everyone else would have come up with the same or similar idea (think Mark Zuckerberg or Jeff Bezos). When we talk about problem solving, we think about how the person who has solved the problem thought about said problem: this process is creative, since insights are needed to come up with solutions, otherwise everyone would have come to the same solution (Think Albert Einstein or Leonhard Euler)! Inherently, the process of thinking is creative and it's these tiny differences in imagination and creativity that allow people to solve very different problems and go into very different fields. 
+To reason about this, let's think about creativity and its implications. Usually when we talk about innovation, we think about *how* a person has innovated something: this process is creative, since otherwise, everyone else would have come up with the same or similar idea (think Mark Zuckerberg and his Facebook or Jeff Bezos and his Amazon). When we talk about problem solving, we think about *how* the person who has solved the problem thought about said problem: this process is creative, since insights are needed to come up with solutions, otherwise everyone would have come to the same solution (Think Albert Einstein or Leonhard Euler)! Inherently, the process of thinking is creative and it's these tiny differences in imagination and creativity that allow people to solve very different problems and go into very different fields. 
 
 But what would happen if this creative process was separate from thinking? That is, what if thinking didn't require creativity? Then there would be no merit in problem solving or innovation. Everyone, theoretically, would have the same ability to solve a certain problem or innovate a certain solution, given the right questions to ask.
 
-At it's core this is what the P vs. NP question asks. It is perhaps just as fundamental to our universe as atoms are. 
+At it's core, this is what the P vs. NP question asks. 
 
 ### P vs. NP
 
@@ -28,7 +28,7 @@ Let's talk about what an easily verifiable problem is.
 >**Definition**
 >An easily verifiable problem is a problem whose solution can be checked quickly
 
-The canonical example is usually Sudoku:
+A canonical example is Sudoku:
 
 <p align = "center">
   <img src="../assets/sudoku.png" width = "400"/>
