@@ -7,7 +7,7 @@ type: nr
 ---
 ### Introduction
 
-Imagine a world where creativity played no role in the problems we faced. 
+Imagine a world where creativity played no role in solving the problems we faced. 
 
 To reason about this, let's think about creativity and its implications. Usually when we talk about innovation, we think about *how* a person has innovated something: this process is creative, since otherwise, everyone else would have come up with the same or similar idea (think Mark Zuckerberg and his Facebook or Jeff Bezos and his Amazon). When we talk about problem solving, we think about *how* the person who has solved the problem thought about said problem: this process is creative, since insights are needed to come up with solutions, otherwise everyone would have come to the same solution (Think Albert Einstein or Leonhard Euler)! Inherently, the process of thinking is creative and it's these tiny differences in imagination and creativity that allow people to solve very different problems and go into very different fields. 
 
