@@ -3,7 +3,7 @@ layout: post
 title: creative collapse
 subtitle: a rigorous introduction to the P vs. NP problem
 tags: [cs, philosophy]
-type: r
+type: r, f
 ---
 ### Introduction
 
