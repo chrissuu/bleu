@@ -29,6 +29,10 @@ How is **exploration** different from **consumption**? Exploration is a broader,
 #### Reflections
 This blog post was initially drafted several months ago, after I began to think deeply about what it means to experience. More precisely, I wondered why people bought expensive clothing, why people liked to eat at Michelin-starred restauraunts, why people like to create art, why people visit museums, etc. I don't think I'll ever truly be able to answer these questions, but this post was a start. My own experiences led me to create biases and subconsciously, prejudices (whether 'good' or 'bad') about people that did certain things, in certain ways. When I lay it out formally like this, I can better reason through my own biases and prejudices, and realize something intrinsic and foundational to human nature: the ability to experience and appreciate experiences. 
 
+Albeit, the title for this post is a little brazen, but perhaps many things can be bucketed into these three ideas!
+
+
+
 #### Footnotes
 <sub><sup>$${}^{*1}$$ Some might suspect that I did not like Mozart here, and while this was certainly true, I regrettably wish that I had listened to more Mozart when I was younger. Today, I can easily say that I have found an appreciation for Mozart. </sup></sub>
 
