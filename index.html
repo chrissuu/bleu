@@ -13,6 +13,10 @@ layout: default
     <span class="vertical-bar">|</span>
     <span class="tab-button-container">
         <button class="tab-button" data-filter="rigorous" onclick="filterPosts('rigorous')">dusk</button>
+    </span>   
+    <span class="vertical-bar">|</span>
+    <span class="tab-button-container">
+        <button class="tab-button" data-filter="favorite" onclick="filterPosts('favorite')">fav</button>
     </span>
     <span class="description-separator"> &gt;&gt;</span>
     <div class="description" id ="description">all posts</div>
@@ -46,7 +50,6 @@ layout: default
                     <b>]</b>
                 {% endif %}
             </div>
-    
             <div class="subtitle">
                 {{ post.subtitle }}
             </div>
@@ -72,22 +75,30 @@ layout: default
             // console.log(post.getAttributeNames());
             
             var postType = post.getAttribute('type');
-            // console.log(postType)
-
+            console.log('posttype:');
+            console.log(postType);
+            var splitAndRemoveSpaces = postType.split(',').map(item => item.trim()).filter(item => item.length > 0);
+            // /console.log(postType)
+            console.log(splitAndRemoveSpaces);
             if (tag === 'all') {
                 post.style.display = 'block';
                 separators[index].style.display="block";
             }
-            else if (tag === 'rigorous' && postType === 'r') {
+            else if (tag === 'rigorous' && splitAndRemoveSpaces.includes('r')) {
                 // console.log("RIGOROUS");
                 post.style.display = 'block';
                 separators[index].style.display="block";
             }
-            else if (tag === 'nonrigorous' && postType === 'nr') {
+            else if (tag === 'nonrigorous' && splitAndRemoveSpaces.includes('nr')) {
                 // console.log("NONRIGOROUS");
                 post.style.display = 'block';
                 separators[index].style.display="block";
-            } else {
+            } 
+            else if (tag === 'favorite' && splitAndRemoveSpaces.includes('f')) {
+                post.style.display = 'block';
+                separators[index].style.display="block";
+            }    
+            else {
                 post.style.display = 'none';
                 separators[index].style.display="none";
             }
@@ -133,7 +144,8 @@ layout: default
         let descriptionText = '';
 
         const map = new Map();
-
+        
+        map.set('favorite', 'fav');
         map.set('nonrigorous', 'dawn');
         map.set('rigorous', 'dusk');
         map.set('all', 'all');
@@ -147,6 +159,9 @@ layout: default
                 break;
             case 'nonrigorous':
                 descriptionText = 'gentle and layman';
+                break;
+            case 'favorite':
+                descriptionText = 'favorite, must reads';
                 break;
         }
 
