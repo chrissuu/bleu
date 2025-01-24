@@ -80,7 +80,7 @@ layout: default
             var splitAndRemoveSpaces = postType.split(',').map(item => item.trim()).filter(item => item.length > 0);
             // /console.log(postType)
             console.log(splitAndRemoveSpaces);
-            if (tag === 'all') {
+            if (tag === 'all' && (splitAndRemoveSpaces.includes('r') || splitAndRemoveSpaces.includes('nr'))) {
                 post.style.display = 'block';
                 separators[index].style.display="block";
             }
@@ -152,16 +152,16 @@ layout: default
 
         switch(filter) {
             case 'all':
-                descriptionText ='all posts';
+                descriptionText ='all posts \\ {randoms}';
                 break;
             case 'rigorous':
                 descriptionText = 'semi-rigorous';
                 break;
             case 'nonrigorous':
-                descriptionText = 'gentle and layman';
+                descriptionText = 'easy reads';
                 break;
             case 'favorite':
-                descriptionText = 'favorite, must reads';
+                descriptionText = 'favorite, must reads, and randoms';
                 break;
         }
 
@@ -198,7 +198,11 @@ layout: default
         }, speed);
     }
 
+    function applyDefaultFilter() {
+        filterPosts('all');
+    }
     document.addEventListener('DOMContentLoaded', () => {
-            typeWriterEffect("all posts"); // Change this to any message you want to display initially
+            applyDefaultFilter();
+            typeWriterEffect("all posts \\ {randoms}"); // Change this to any message you want to display initially
     });
 </script>
