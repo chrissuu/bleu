@@ -3,7 +3,7 @@ layout: post
 title: living is these three things.
 subtitle: the creation, consumption, exploration dilemma
 tags: [random]
-type: nr, f
+type: f
 ---
 **Creation**
 
