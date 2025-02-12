@@ -7,11 +7,13 @@ title: About Me
 
 Hi, i'm **chris (jin) su**, a sophomore at Carnegie Mellon University in Pittsburgh PA.
 
-I enjoy a wide variety of topics, mainly: physics, mathematics, statistics, and the intersections between them.
+I enjoy a wide variety of topics, mainly: physics, mathematics, statistics, and the intersections between them. 
 
 ### About this blog
 
-This blog is split into (mainly) 3 categories of posts:
+I think it's easy to read about an interesting problem or proof or idea and then do the ultimate disservice of not fully digesting it. The purpose of this blog is to document as many of the profound ideas I come across, as possible. 
+
+The blog is (mainly) split into 3 categories of posts:
 1. Non-rigorous
 2. Rigorous
 3. Random
