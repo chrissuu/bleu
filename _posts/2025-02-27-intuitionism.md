@@ -1,7 +1,7 @@
 ---
 layout: post
 title: brouwer and the intuitionists
-subtitle: the philosophy of mathematics (pt1)
+subtitle: the philosophy of mathematics
 tags: [math, philosophy]
 type: nr
 ---
@@ -43,4 +43,4 @@ The foundations of intuitionism poses a rebuttal to the formalist movement. From
 
 Whichever side you lie on, these ideas help to probe the large question of the nature of mathematics: "Is mathematics discovered or created?", "What is the role of humans in mathematics?", "What does the future of mathematics look like?"
 
-The next post will try to look into these questions as we slowly move into an era of smarter artificial intelligence. 
+A future post will try to look into these questions as we slowly move into an era of smarter artificial intelligence. 

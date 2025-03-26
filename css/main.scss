@@ -350,3 +350,13 @@ table tr th :first-child, table tr td :first-child {
 table tr th :last-child, table tr td :last-child {
     margin: 0;
 }
+
+// Footnotes 
+
+.footnotes {
+    font-size: 0.8em; /* Adjust size as needed */
+}
+
+.footnotes p {
+    margin: 0;
+}
