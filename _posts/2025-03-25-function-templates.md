@@ -90,7 +90,7 @@ Hence, we introduce the following function, "fold", which accumulates the elemen
 
 First, note that this function is recursive because of the **foldl** call on line (3). Line (2) says that when you have no more elements left in your original list, return what you have accumulated so far (and corresponds to the base case). Line (3) says that when you still have more elements left, you should combine the elements at the front of the list, x1, with your accumulator, $$z$$, using $$f$$, and make it the new accumulator in the recursive call. 
 
-Now, using fold, we can redefine the functions **sum_list** and **prod_list** with a single line of code:
+Now, using **fold**, we can redefine the functions **sum_list** and **prod_list** with a single line of code:
 
 <hr style="height: 2px; background-color: black; border: none;">
 
@@ -125,4 +125,4 @@ Given some multivariate function, $$f$$, the idea of currying allows us to natur
 
 Yet, this idea is deeper than it seems: since we've essentially serialized the execution of $$f$$, stopping the execution at some $$i$$, $$h_n(h_{n-1}(...h_i(x)))$$, creates function families that have a similar concept to the original function $$f$$, but more "general". This notion allows for us to create clever function templates and instantly increase the expressiveness of a programming language without much added syntactical complexity.
 
-[^1]: fold (+) 1, fold (+) 2, fold (+) k, respectively
+[^1]: **fold** (+) 1, **fold** (+) 2, **fold** (+) k, respectively
