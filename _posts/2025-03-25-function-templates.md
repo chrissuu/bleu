@@ -126,3 +126,4 @@ Given some multivariate function, $$f$$, the idea of currying allows us to natur
 Yet, this idea is deeper than it seems: since we've essentially serialized the execution of $$f$$, stopping the execution at some $$i$$, $$h_n(h_{n-1}(...h_i(x)))$$, creates function families that have a similar concept to the original function $$f$$, but more "general". This notion allows for us to create clever function templates and instantly increase the expressiveness of a programming language without much added syntactical complexity.
 
 [^1]: **fold** (+) 1, **fold** (+) 2, **fold** (+) k, respectively
+
