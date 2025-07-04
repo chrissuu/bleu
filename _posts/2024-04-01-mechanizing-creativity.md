@@ -112,6 +112,8 @@ In other words, given any problem whose truth or falseness can be verified effic
 
 In any case, we have completely removed creativity from problem solving!
 
+**small notes**: some of the arguments made here hinge on technicalities such as short proof length. While it is true that resolving P vs. NP in the positive would allow for us to solve many difficult problems, not all of math would completely be solved. In addition, some problems in math are unprovable. 
+
 ### Overview
 
 As we have seen, the P vs. NP problem is a fundamental question that has impacts in all aspects of our life! Though this overview of this problem was very specific to creativity, it only touches on the very tip (but perhaps a large tip) of a gigantic iceberg. A $$P=NP$$ resolution would most likely change our lives in drastic ways! Most problems we have would be efficiently solvable without much creativity as part of the process. Perhaps the most creative part about problem solving, then, would be posing the right questions. In fact, it is without a doubt that asking the right questions is perhaps just as important and insightful than answering them. 
