@@ -8,14 +8,6 @@ layout: default
     </span>
     <span class="vertical-bar">|</span>
     <span class="tab-button-container">
-        <button class="tab-button" data-filter="nonrigorous" onclick="filterPosts('nonrigorous')">dawn</button>
-    </span>
-    <span class="vertical-bar">|</span>
-    <span class="tab-button-container">
-        <button class="tab-button" data-filter="rigorous" onclick="filterPosts('rigorous')">dusk</button>
-    </span>   
-    <span class="vertical-bar">|</span>
-    <span class="tab-button-container">
         <button class="tab-button" data-filter="favorite" onclick="filterPosts('favorite')">fav</button>
     </span>
     <span class="description-separator"> &gt;&gt;</span>
@@ -84,16 +76,6 @@ layout: default
                 post.style.display = 'block';
                 separators[index].style.display="block";
             }
-            else if (tag === 'rigorous' && splitAndRemoveSpaces.includes('r')) {
-                // console.log("RIGOROUS");
-                post.style.display = 'block';
-                separators[index].style.display="block";
-            }
-            else if (tag === 'nonrigorous' && splitAndRemoveSpaces.includes('nr')) {
-                // console.log("NONRIGOROUS");
-                post.style.display = 'block';
-                separators[index].style.display="block";
-            } 
             else if (tag === 'favorite' && splitAndRemoveSpaces.includes('f')) {
                 post.style.display = 'block';
                 separators[index].style.display="block";
@@ -146,19 +128,11 @@ layout: default
         const map = new Map();
         
         map.set('favorite', 'fav');
-        map.set('nonrigorous', 'dawn');
-        map.set('rigorous', 'dusk');
         map.set('all', 'all');
 
         switch(filter) {
             case 'all':
                 descriptionText ='all posts \\ {randoms}';
-                break;
-            case 'rigorous':
-                descriptionText = 'semi-rigorous';
-                break;
-            case 'nonrigorous':
-                descriptionText = 'easy reads';
                 break;
             case 'favorite':
                 descriptionText = 'favorite, must reads, and randoms';
