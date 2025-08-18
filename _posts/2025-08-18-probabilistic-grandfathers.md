@@ -6,7 +6,7 @@ tags: [math]
 type: nr
 ---
 ### Introduction
-The most famous time travel paradox goes like this:
+A well known time travel paradox goes like this:
 
 Suppose you have a time machine which can take you back in time. 
 
@@ -42,8 +42,12 @@ In a universe which has time travel into the past within the same space-time cur
 
 Of course, it's unclear what is meant by "existing with probability 1/2". It's also unclear what is the timeframe in which you exist with this probability. For instance, up until you made the decision to use the time machine, did you really have probability 1 of existing? Did you only begin to have probability 1/2 of existing AFTER you thought of using the time machine? These natural questions arise, but because the solution is at the very least mathematically sound, an answer likely appeals more to philosophical ramifications.
 
+Maybe one way to resolve it is to think of it as some quantum state that is superpositioned conditioned on the random event of your birth, but I'm not terribly confident that I have enough knowledge of quantum mechanics to make that argument sound :)
+
 ### Conclusion
-This was a brief post talking about fixed distributions in markov chains, although it may not have seemed like it. The next post will cover some of the main ideas in Scott Aaronson's blog post about a computational model which uses time travel to gain more computational power over the complexity class P.
+This was a brief post talking about fixed distributions in markov chains, although it may not have seemed like it. The next post will cover some of the main ideas in Scott Aaronson's blog post about a computational model which uses time travel to gain more computational power over the complexity class P. 
+
+In fact, it turns out that with access to this time machine, we can solve NP-complete problems in polynomial time and even PSPACE problems in polynomial time! For those unfamiliar, PSPACE is the complexity class of problems solvable in polynomial space -- this is a class which is believed to be strictly stronger than NP. Note that $$NP \subseteq PSPACE$$ since NP has a polynomially-bounded length in proof size, which means that we can simply enumerate all polynomial length proofs and use the verifier TM to compute the language. The key insight is that across each membership test, you can reuse space (and hence $$NP \subseteq PSPACE$$ and widely believed that $$NP \subsetneq PSPACE$$)!
 
 ### References
 >[David Deutsch, Quantum Mechanics of Time Travel](https://en.wikipedia.org/wiki/Quantum_mechanics_of_time_travel)
