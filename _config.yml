@@ -18,4 +18,4 @@ navbar:
    link: "about"
 
 markdown: kramdown
-highligher: rouge
+highlighter: rouge
