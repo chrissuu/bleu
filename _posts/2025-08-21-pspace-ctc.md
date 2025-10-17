@@ -13,7 +13,7 @@ PSPACE is the complexity class containing languages that can be computed with po
 
 Observe that because proofs for instances of $$NP$$ languages is bounded by polynomial length, $$NP \subseteq PSPACE$$ since we can simply loop over all proofs for an instance of your favorite $$NP$$-complete language and see which proof allows the instance to be accepted (and if none, then reject).
 
-The key observation is that space, unlike time, is reusable, and so we can simply overwrite the existing bits on the tape when looping over proofs. Note that this is one key piece of intuition for why $P_{CTC} = PSPACE$.
+The key observation is that space, unlike time, is reusable, and so we can simply overwrite the existing bits on the tape when looping over proofs. Note that this is one key piece of intuition for why $$P_{CTC} = PSPACE$$.
 
 We can also look into languages that are $$PSPACE$$-complete.
 
