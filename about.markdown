@@ -15,9 +15,7 @@ I think it's easy to read an interesting problem / proof / idea and then do the 
 
 ### Reach out!
 
-If you want to reach out, contribute a post idea, or find any bugs / typos / mistakes in my writing: make an issue to the [github](https://github.com/chrissuu/bleu.git) or email me with the header [bleu]: 
-
-> chrisssu19 [at] gmail [dot] com
+If you want to reach out, contribute a post idea, or find any bugs / typos / mistakes in my writing: make an issue to the [github](https://github.com/chrissuu/bleu.git)!
 
 <p align = "left">
   <img src="../assets/IMG_9414.jpg" width = "400"/>
