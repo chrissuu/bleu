@@ -14,9 +14,10 @@ transformers to do next token prediction. During this step, the model can be tho
 In general, the model during this step has learned a lot of the syntactical rules of the language(s) that it
 is trying to next token predict. 
 
-Post-training is composed of many different fine-tuning steps:
+Post-training is composed of many different fine-tuning steps (not exhaustive!). It is up to the trainer's discretion on which steps
+are relevant towards getting the model to behave the way you want:
 
-1. supervised fine-tuning where you try to teach the model how to do basic instruction following
+1. Supervised fine-tuning where you have explicit input-output pairs for some dataset. (For instance, you could try to teach the model how to do basic instruction following)
 2. RLHF, where you learn human preferences for responses (i.e., when ChatGPT produces two parallel responses and asks you to rate them). 
 This step is slightly dangerous since it increases sycophancy in LLMs (where the model is more likely to agree with what you say. Intuitively,
 you might see why this is the case -- humans are more likely to rate outputs which agree than disagree with them.)
@@ -50,5 +51,4 @@ closer to your desired behavior's weights.
 
 2. Much of the "behavior" that we would like the model to exhibit is earned through post-training. Since pre-training $$\rightarrow$$ post-training is faster than random-initialization $$\rightarrow$$ post-training, the post-training step is important for
 the model to learn the syntax of the language as well as having a baseline world model of how things interact. Perhaps what isn't as clear 
-is how much each component is necessary in exhibiting some behavior, and could be an interesting ablation for training efficiency. For instance, if your goal is to have a good reasoning model, you could train a small model until its outputs are coherent, and then increase the
-model's expressiveness by adding further layers (but with identity weights) and then post-train your model. Pre-training would thus be "make your model coherent" and post-training would be "make my model exhibit xyz behavior", rather than "make my model coherent but also have some prior for world modeling" and "make my model exhibit xyz behavior".
+is how much each component is necessary in exhibiting some behavior, and could be an interesting ablation for training efficiency. For instance, if your goal is to have a good reasoning model, but you're limited by compute capabilities, you could train a small model until its outputs are coherent, and then increase the model's expressiveness by adding further layers (but with identity weights) and then post-train your model. Pre-training would thus be "make your model coherent" and post-training would be "make my model exhibit xyz behavior", rather than "make my model coherent but also have some prior for world modeling" and "make my model exhibit xyz behavior".
