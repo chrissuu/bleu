@@ -10,8 +10,8 @@ Super quick post, but I wanted to talk about this semi-interesting phenomenon ab
 Modern LLMs are (mostly) trained in two stages: pre-training and post-training.
 
 Pre-training combines large datasets of basically the entire internet with clever architecture designs made around 
-transformers to do next token prediction. During this step, the model can be thought of as "advanced auto complete".
-In general, the model during this step has learned a lot of the syntactical rules of the language(s) that it
+transformers to do next token prediction (usually). During this step, the model can be thought of as an "advanced auto complete".
+In general, the model during this step has learned a lot of the syntactical rules and semantics of the language(s) that it
 is trying to next token predict. 
 
 Post-training is composed of many different fine-tuning steps (not exhaustive!). It is up to the trainer's discretion on which steps
@@ -49,9 +49,8 @@ where weights of the initial task (next token prediction) is "transferred" to th
 following, RAG, etc). In other words, pre-training is a way to bootstrap the model's weights towards the direction of weights which are 
 closer to your desired behavior's weights.
 
-2. Much of the "behavior" that we would like the model to exhibit is earned through post-training. Since pre-training $$\rightarrow$$ post-training is faster than random-initialization $$\rightarrow$$ post-training, the post-training step is important for
-the model to learn the syntax of the language as well as having a baseline world model of how things interact. Perhaps what isn't as clear 
-is how much each component is necessary in exhibiting some behavior, and could be an interesting ablation for training efficiency. For instance, if your goal is to have a good reasoning model, but you're limited by compute capabilities, you could train a small model until its outputs are coherent, and then increase the model's expressiveness by adding further layers (but with identity weights) and then post-train your model. Pre-training would thus be "make your model coherent" and post-training would be "make my model exhibit xyz behavior", rather than "make my model coherent but also have some prior for world modeling" and "make my model exhibit xyz behavior".
+2. Much of the "behavior" that we would like the model to exhibit is earned through post-training. Since pre-training $$\rightarrow$$ post-training is more efficient than random-initialization $$\rightarrow$$ post-training, the pre-training step is important for
+the model to learn the syntax and semantics of the language as well as having a baseline world model of how things interact. Perhaps what isn't as clear is how much each component is necessary in exhibiting some behavior, and could be an interesting ablation for training efficiency. For instance, if your goal is to have a good reasoning model, but you're limited by compute capabilities, you could train a small model until its outputs are coherent, and then increase the model's expressiveness by adding further layers (but with identity weights) and then post-train your model. Pre-training would thus be "make your model coherent" and post-training would be "make my model exhibit xyz behavior", rather than "make my model coherent but also have some prior for world modeling" and "make my model exhibit xyz behavior".
 
 This has implications for some clever training methods: The naive way to train a HUUUGEE 1 trillion parameter model would be to start with 1 trillion weights, randomly initialized,
 and do your training steps. This would take forever! Instead, we could train a smaller, say, 10 billion parameter model, and then "expand" the model's weights through interpolation
