@@ -15,4 +15,4 @@ RUN bundle config set path "/usr/local/bundle" \
 
 EXPOSE 4000 35729
 
-CMD ["bash", "-lc", "bundle install && bundle exec jekyll serve --config _config.yml,_config.docker.yml --host 0.0.0.0 --livereload --livereload-port 35729 --force_polling --incremental"]
+CMD ["bash", "-lc", "bundle install && bundle exec jekyll serve --config _config.yml,_config.docker.yml --host 0.0.0.0 --livereload --livereload-port 35729 --force_polling"]
