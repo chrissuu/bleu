@@ -90,21 +90,30 @@
         const contentHtml = clone.querySelector('p') ? clone.querySelector('p').innerHTML : clone.innerHTML;
         const number = link.textContent ? link.textContent.trim() : '';
 
-        const inline = document.createElement('span');
-        inline.className = 'inline-footnote';
         const safeId = targetId.replace(/[^a-zA-Z0-9_-]/g, '-');
-        inline.id = `inline-footnote-${safeId}`;
-        inline.innerHTML = `<span class="inline-footnote-number">${number}</span>${contentHtml}`;
+        const inlineId = `inline-footnote-${safeId}`;
 
-        link.setAttribute('href', `#${inline.id}`);
+        link.setAttribute('href', `#${inlineId}`);
+        link.dataset.inlineFootnoteId = inlineId;
+        link.dataset.inlineFootnoteContent = contentHtml;
+        link.dataset.inlineFootnoteNumber = number;
         link.addEventListener('click', (event) => {
           event.preventDefault();
           event.stopPropagation();
-          inline.classList.toggle('is-open');
-        });
+          const existing = document.getElementById(inlineId);
+          if (existing) {
+            existing.remove();
+            return;
+          }
 
-        const anchor = link.closest('sup') || link;
-        anchor.insertAdjacentElement('afterend', inline);
+          const inline = document.createElement('span');
+          inline.className = 'inline-footnote';
+          inline.id = inlineId;
+          inline.innerHTML = `<span class="inline-footnote-number">${number}</span>${contentHtml}`;
+
+          const anchor = link.closest('sup') || link;
+          anchor.insertAdjacentElement('afterend', inline);
+        });
       });
 
       document.body.classList.add('has-inline-footnotes');
