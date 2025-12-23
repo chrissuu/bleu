@@ -8,6 +8,8 @@ $accent: #FF0F00;
 $max-width: 740px;
 $med-width: 600px;
 $small-width: 480px;
+$sidenote-width: 300px;
+$sidenote-gap: 80px;
 
 // Basic
 
@@ -226,6 +228,7 @@ code {
 //  typography
 
 .content {
+    position: relative;
     line-height: 1.5;
     h1, h2, h3, h4 {
         margin-block-start: 2em !important;
@@ -359,4 +362,68 @@ table tr th :last-child, table tr td :last-child {
 
 .footnotes p {
     margin: 0;
+}
+
+.sidenotes {
+    position: absolute;
+    top: 0;
+    right: -($sidenote-width + $sidenote-gap);
+    width: $sidenote-width;
+    font-size: 0.8em;
+    line-height: 1.4;
+}
+
+.sidenote {
+    position: absolute;
+    right: 0;
+    padding-left: 10px;
+    border-left: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.sidenote-number {
+    font-weight: bold;
+    margin-right: 6px;
+}
+
+.has-sidenotes .footnotes {
+    display: none;
+}
+
+.inline-footnote {
+    display: block;
+    margin: 12px 0 16px;
+    font-size: 0.78em;
+    border-left: 2px solid rgba(0, 0, 0, 0.2);
+    padding-left: 10px;
+    background-color: transparent;
+}
+
+.inline-footnote-number {
+    font-weight: bold;
+    margin-right: 6px;
+}
+
+.has-inline-footnotes .footnotes {
+    display: none;
+}
+
+@media (min-width: 1100px) {
+    .content {
+        padding-right: 0;
+    }
+}
+
+@media (max-width: 1099px) {
+    .content a.footnote {
+        -webkit-tap-highlight-color: transparent;
+    }
+    .sidenotes {
+        display: none;
+    }
+    .has-sidenotes .footnotes {
+        display: block;
+    }
+    .footnotes {
+        display: none;
+    }
 }

@@ -16,5 +16,117 @@
     </div>
     {% include footer.html %}
   </div>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const footnoteLinks = document.querySelectorAll('a.footnote');
+      const footnotes = document.querySelector('.footnotes');
+      const content = document.querySelector('.content');
+      const canUseSidenotes = window.matchMedia('(min-width: 1100px)').matches;
+      if (!footnoteLinks.length || !footnotes || !content) {
+        return;
+      }
+
+      if (canUseSidenotes) {
+        const sidenotes = document.createElement('div');
+        sidenotes.className = 'sidenotes';
+        content.appendChild(sidenotes);
+
+        let lastTop = 0;
+        const minGap = 14;
+
+        footnoteLinks.forEach((link) => {
+          const href = link.getAttribute('href');
+          if (!href || !href.startsWith('#')) {
+            return;
+          }
+          const targetId = href.slice(1);
+          const noteLi = document.getElementById(targetId);
+          if (!noteLi) {
+            return;
+          }
+
+          const note = document.createElement('div');
+          note.className = 'sidenote';
+
+          const clone = noteLi.cloneNode(true);
+          clone.querySelectorAll('a.reversefootnote, a[href^="#fnref"]').forEach((el) => el.remove());
+          const contentHtml = clone.querySelector('p') ? clone.querySelector('p').innerHTML : clone.innerHTML;
+          const number = link.textContent ? link.textContent.trim() : '';
+          note.innerHTML = `<span class="sidenote-number">${number}</span> ${contentHtml}`;
+          const safeId = targetId.replace(/[^a-zA-Z0-9_-]/g, '-');
+          note.id = `sidenote-${safeId}`;
+          link.setAttribute('href', `#${note.id}`);
+          sidenotes.appendChild(note);
+
+          const linkRect = link.getBoundingClientRect();
+          const contentRect = content.getBoundingClientRect();
+          let top = linkRect.top - contentRect.top;
+          if (top < lastTop + minGap) {
+            top = lastTop + minGap;
+          }
+          note.style.top = `${top}px`;
+          lastTop = top;
+        });
+
+        if (sidenotes.children.length) {
+          document.body.classList.add('has-sidenotes');
+        }
+        return;
+      }
+
+      footnoteLinks.forEach((link) => {
+        const href = link.getAttribute('href');
+        if (!href || !href.startsWith('#')) {
+          return;
+        }
+        const targetId = href.slice(1);
+        const noteLi = document.getElementById(targetId);
+        if (!noteLi) {
+          return;
+        }
+
+        const clone = noteLi.cloneNode(true);
+        clone.querySelectorAll('a.reversefootnote, a[href^="#fnref"]').forEach((el) => el.remove());
+        const contentHtml = clone.querySelector('p') ? clone.querySelector('p').innerHTML : clone.innerHTML;
+        const number = link.textContent ? link.textContent.trim() : '';
+
+        const safeId = targetId.replace(/[^a-zA-Z0-9_-]/g, '-');
+        const inlineId = `inline-footnote-${safeId}`;
+
+        link.setAttribute('href', `#${inlineId}`);
+
+        const toggleInlineFootnote = (event) => {
+          event.preventDefault();
+          event.stopPropagation();
+          if (event.type === 'click' && link.dataset.inlineTouched === 'true') {
+            link.dataset.inlineTouched = 'false';
+            return;
+          }
+          if (event.type === 'touchend') {
+            link.dataset.inlineTouched = 'true';
+          }
+
+          const existing = document.getElementById(inlineId);
+          if (existing) {
+            existing.remove();
+            return;
+          }
+
+          const inline = document.createElement('div');
+          inline.className = 'inline-footnote';
+          inline.id = inlineId;
+          inline.innerHTML = `<span class="inline-footnote-number">${number}</span>${contentHtml}`;
+
+          const anchor = link.closest('p, li, blockquote') || link;
+          anchor.insertAdjacentElement('afterend', inline);
+        };
+
+        link.addEventListener('click', toggleInlineFootnote);
+        link.addEventListener('touchend', toggleInlineFootnote);
+      });
+
+      document.body.classList.add('has-inline-footnotes');
+    });
+  </script>
 </body>
 </html>
