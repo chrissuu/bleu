@@ -395,6 +395,7 @@ table tr th :last-child, table tr td :last-child {
     font-size: 0.78em;
     border-left: 2px solid rgba(0, 0, 0, 0.2);
     padding-left: 10px;
+    background-color: transparent;
 }
 
 .inline-footnote-number {
@@ -413,6 +414,9 @@ table tr th :last-child, table tr td :last-child {
 }
 
 @media (max-width: 1099px) {
+    .content a.footnote {
+        -webkit-tap-highlight-color: transparent;
+    }
     .sidenotes {
         display: none;
     }
