@@ -94,9 +94,6 @@
         const inlineId = `inline-footnote-${safeId}`;
 
         link.setAttribute('href', `#${inlineId}`);
-        link.dataset.inlineFootnoteId = inlineId;
-        link.dataset.inlineFootnoteContent = contentHtml;
-        link.dataset.inlineFootnoteNumber = number;
         link.addEventListener('click', (event) => {
           event.preventDefault();
           event.stopPropagation();
@@ -106,12 +103,12 @@
             return;
           }
 
-          const inline = document.createElement('span');
+          const inline = document.createElement('div');
           inline.className = 'inline-footnote';
           inline.id = inlineId;
           inline.innerHTML = `<span class="inline-footnote-number">${number}</span>${contentHtml}`;
 
-          const anchor = link.closest('sup') || link;
+          const anchor = link.closest('p, li, blockquote') || link;
           anchor.insertAdjacentElement('afterend', inline);
         });
       });

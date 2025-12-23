@@ -390,8 +390,7 @@ table tr th :last-child, table tr td :last-child {
 }
 
 .inline-footnote {
-    display: inline-block;
-    width: 100%;
+    display: block;
     margin: 12px 0 16px;
     font-size: 0.78em;
     border-left: 2px solid rgba(0, 0, 0, 0.2);
