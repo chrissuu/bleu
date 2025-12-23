@@ -99,6 +99,7 @@
         link.setAttribute('href', `#${inline.id}`);
         link.addEventListener('click', (event) => {
           event.preventDefault();
+          event.stopPropagation();
           inline.classList.toggle('is-open');
         });
 

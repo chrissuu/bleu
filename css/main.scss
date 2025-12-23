@@ -391,7 +391,7 @@ table tr th :last-child, table tr td :last-child {
 
 .inline-footnote {
     display: none;
-    margin: 6px 0 10px;
+    margin: 10px 0 14px;
     font-size: 0.78em;
     border-left: 2px solid rgba(0, 0, 0, 0.2);
     padding-left: 10px;
@@ -418,6 +418,9 @@ table tr th :last-child, table tr td :last-child {
     }
     .has-sidenotes .footnotes {
         display: block;
+    }
+    .footnotes {
+        display: none;
     }
     .has-inline-footnotes .inline-footnote {
         display: none;
