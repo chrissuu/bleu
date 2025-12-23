@@ -94,9 +94,18 @@
         const inlineId = `inline-footnote-${safeId}`;
 
         link.setAttribute('href', `#${inlineId}`);
-        link.addEventListener('click', (event) => {
+
+        const toggleInlineFootnote = (event) => {
           event.preventDefault();
           event.stopPropagation();
+          if (event.type === 'click' && link.dataset.inlineTouched === 'true') {
+            link.dataset.inlineTouched = 'false';
+            return;
+          }
+          if (event.type === 'touchend') {
+            link.dataset.inlineTouched = 'true';
+          }
+
           const existing = document.getElementById(inlineId);
           if (existing) {
             existing.remove();
@@ -110,7 +119,10 @@
 
           const anchor = link.closest('p, li, blockquote') || link;
           anchor.insertAdjacentElement('afterend', inline);
-        });
+        };
+
+        link.addEventListener('click', toggleInlineFootnote);
+        link.addEventListener('touchend', toggleInlineFootnote);
       });
 
       document.body.classList.add('has-inline-footnotes');
