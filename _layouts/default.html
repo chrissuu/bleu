@@ -103,7 +103,8 @@
           inline.classList.toggle('is-open');
         });
 
-        link.insertAdjacentElement('afterend', inline);
+        const anchor = link.closest('sup') || link;
+        anchor.insertAdjacentElement('afterend', inline);
       });
 
       document.body.classList.add('has-inline-footnotes');
