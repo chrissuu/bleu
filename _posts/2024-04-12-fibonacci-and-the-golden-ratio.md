@@ -131,3 +131,5 @@ Linear algebra is an interesting perspective on solving linear recurrence relati
 >[Golden Ratio (wiki)](https://en.wikipedia.org/wiki/Golden_ratio)
 >
 >[Fibonacci Sequence (wiki)](https://en.wikipedia.org/wiki/Fibonacci_sequence#Relation_to_the_golden_ratio)
+
+<div class="author-box">Chris Su - Carnegie Mellon University - AI &amp; Computer Science</div>

@@ -137,3 +137,5 @@ Okay, that's enough experimenting... I honestly thought that final number would 
 >[The guy on github that gave me a hamlet txt file](https://gist.github.com/provpup/2fc41686eab7400b796b#file-hamlet-txt)
 >
 >[The guy on reddit discovering infinity](https://www.reddit.com/r/Existentialism/comments/16hcfi6/no_fucking_chance_would_infinite_monkeys_with/)
+
+<div class="author-box">Chris Su - Carnegie Mellon University - AI &amp; Computer Science</div>

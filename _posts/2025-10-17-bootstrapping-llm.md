@@ -61,3 +61,5 @@ To me, the most interesting takeaway here is that if we can define some training
 then there is also a way to define a notion of "closeness"/distance between two behaviors (training algorithms) as the inner product of functions parameterized
 by the converged weights under the respective training algorithms! And thus, if two behaviors are similar, then tuning one to the other and vice versa should
 theoretically be computationally easier!
+
+<div class="author-box">Chris Su - Carnegie Mellon University - AI &amp; Computer Science</div>

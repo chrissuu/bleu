@@ -142,4 +142,4 @@ The next post will cover the proofs as well as some applications!
 >
 >[Gale-Shapley Algorithm Wiki](https://en.wikipedia.org/wiki/Gale%E2%80%93Shapley_algorithm)
 
-
+<div class="author-box">Chris Su - Carnegie Mellon University - AI &amp; Computer Science</div>

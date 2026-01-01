@@ -155,3 +155,5 @@ As an exercise, try to see if you can come up with a way to count the rational n
 >[Diagonalization (wiki)](https://en.wikipedia.org/wiki/Cantor%27s_diagonal_argument)
 >
 >[Cantor (wiki)](https://en.wikipedia.org/wiki/Georg_Cantor)
+
+<div class="author-box">Chris Su - Carnegie Mellon University - AI &amp; Computer Science</div>

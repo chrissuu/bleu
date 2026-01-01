@@ -60,3 +60,5 @@ the first True element or the last False element and add 1 to the index that is 
 
 ### References
 >[Peak Index in Mountain Array Leetcode](https://leetcode.com/problems/peak-index-in-a-mountain-array/description/)
+
+<div class="author-box">Chris Su - Carnegie Mellon University - AI &amp; Computer Science</div>

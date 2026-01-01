@@ -154,3 +154,5 @@ Number theory is a rich field and it's always cool to see new proofs of establis
 >CMU CS 15-251
 >
 >[arxiv paper](https://doi.org/10.48550/arXiv.2005.10372)
+
+<div class="author-box">Chris Su - Carnegie Mellon University - AI &amp; Computer Science</div>

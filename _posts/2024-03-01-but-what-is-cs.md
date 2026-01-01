@@ -45,3 +45,5 @@ Computer science can be seen as the field of studying and modeling problem solvi
 ### References
 
 >[Computers (occupation)](https://en.wikipedia.org/wiki/Computer_(occupation))
+
+<div class="author-box">Chris Su - Carnegie Mellon University - AI &amp; Computer Science</div>

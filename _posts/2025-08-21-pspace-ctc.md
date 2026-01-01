@@ -122,3 +122,5 @@ computational resource!
 >[David Deutsch, Quantum Mechanics of Time Travel](https://en.wikipedia.org/wiki/Quantum_mechanics_of_time_travel)
 >
 >[Scott Aarronson, Democritus](https://scottaaronson.com/democritus/lec19.html)
+
+<div class="author-box">Chris Su - Carnegie Mellon University - AI &amp; Computer Science</div>
