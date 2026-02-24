@@ -3,7 +3,7 @@ layout: default
 ---
 
 <div class="page-subtitle">
-    <span class="post-byline">By {{ site.author }} · {{ site.affiliation }}</span>
+    <span class="post-byline">By {{ site.author }} - &lt; {{ site.email_obfuscated }} &gt;</span>
     <br>
     {% for tag in page.tags %}
         {% if page.tags.first == tag %}
@@ -19,3 +19,5 @@ layout: default
 </div>
 
 {{content}}
+
+<div class="author-box">{{ site.author_box }}</div>

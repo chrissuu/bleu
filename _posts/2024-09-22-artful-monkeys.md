@@ -138,4 +138,3 @@ Okay, that's enough experimenting... I honestly thought that final number would 
 >
 >[The guy on reddit discovering infinity](https://www.reddit.com/r/Existentialism/comments/16hcfi6/no_fucking_chance_would_infinite_monkeys_with/)
 
-<div class="author-box">Chris Su - Carnegie Mellon University - AI &amp; Computer Science</div>

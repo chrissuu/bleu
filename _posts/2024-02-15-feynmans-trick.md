@@ -110,4 +110,3 @@ Feynman's trick can be seen as solving not just one integral but a family of int
 1. [Putnam 2005](https://kskedlaya.org/putnam-archive/2005.pdf)
 2. [Practice problems / further reading (UCONN)](https://kconrad.math.uconn.edu/blurbs/analysis/diffunderint.pdf)
 
-<div class="author-box">Chris Su - Carnegie Mellon University - AI &amp; Computer Science</div>

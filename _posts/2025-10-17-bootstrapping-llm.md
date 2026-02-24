@@ -62,4 +62,3 @@ then there is also a way to define a notion of "closeness"/distance between two 
 by the converged weights under the respective training algorithms! And thus, if two behaviors are similar, then tuning one to the other and vice versa should
 theoretically be computationally easier!
 
-<div class="author-box">Chris Su - Carnegie Mellon University - AI &amp; Computer Science</div>

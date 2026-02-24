@@ -18,4 +18,3 @@ In middle school, however, my friend played me a solo cello rendition of Rachman
 
 Now in university, I realize the amazing privilege I had: the privilege of being able to quit. To my parents who let me quit, they gave me the privilege to quit and then try something new. If you made it this far, I'm not saying you should quit whenever you feel like it - rather, you should recognize the privilege you have when you say that you want to "quit" something (usually, this privilege also allows you to start something else). For me, I was fortunate to have found the piano and mathematics, and in all sense that seems reasonable, the privilege of quitting also sparked my enthusiasm for learning new things.
 
-<div class="author-box">Chris Su - Carnegie Mellon University - AI &amp; Computer Science</div>

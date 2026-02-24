@@ -121,4 +121,3 @@ At this point, I've realized that finding a numerical solution to this problem l
 
 >[Jane Street Capital](https://www.janestreet.com/)
 
-<div class="author-box">Chris Su - Carnegie Mellon University - AI &amp; Computer Science</div>

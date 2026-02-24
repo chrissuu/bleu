@@ -156,4 +156,3 @@ As an exercise, try to see if you can come up with a way to count the rational n
 >
 >[Cantor (wiki)](https://en.wikipedia.org/wiki/Georg_Cantor)
 
-<div class="author-box">Chris Su - Carnegie Mellon University - AI &amp; Computer Science</div>

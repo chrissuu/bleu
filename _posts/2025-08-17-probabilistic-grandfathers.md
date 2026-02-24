@@ -54,4 +54,3 @@ In fact, it turns out that with access to this time machine, we can solve NP-com
 >
 >[Scott Aarronson, Democritus](https://scottaaronson.com/democritus/lec19.html)
 
-<div class="author-box">Chris Su - Carnegie Mellon University - AI &amp; Computer Science</div>

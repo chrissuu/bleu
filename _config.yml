@@ -1,8 +1,10 @@
 title: bleu
 author: Chris Su
+email_obfuscated: "chrjs @ cmu . edu"
 subtitle: bomp
 description: Notes on computer science, AI, and mathematics by Chris Su at Carnegie Mellon University (CMU).
 affiliation: Carnegie Mellon University (CMU)
+author_box: Chris Su - < chrjs @ cmu . edu >
 url: https://www.chrissuu.com
 
 baseurl: "/bleu"

@@ -38,4 +38,3 @@ This blog post was initially drafted several months ago, after I began to think 
 
 <sub><sup>$${}^{*3}$$ Here, I use "art" as a general term that fits the following definition: **anything that can be created and consumed.** I really like this definition (I'm not sure if someone else had established this definition, but for now it's my own) because it is broad enough to capture the essence of art. By this definition, mathematics is art, because people can both consume math (solve well established problems) and create math (research). Most mathematicians would argue that mathematics itself is a form of art, so no contradiciton here. </sup></sub>
 
-<div class="author-box">Chris Su - Carnegie Mellon University - AI &amp; Computer Science</div>

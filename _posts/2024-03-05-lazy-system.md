@@ -164,4 +164,3 @@ Following is the code used to hypothesize about the expected value for arbitrary
 >
 >[Linearity of expectation & Indicators](https://eng.libretexts.org/Bookshelves/Computer_Science/Programming_and_Computation_Fundamentals/Mathematics_for_Computer_Science_(Lehman_Leighton_and_Meyer)/04%3A_Probability/18%3A_Random_Variables/18.05%3A__Linearity_of_Expectation)
 
-<div class="author-box">Chris Su - Carnegie Mellon University - AI &amp; Computer Science</div>

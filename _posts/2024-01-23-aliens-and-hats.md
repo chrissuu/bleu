@@ -71,4 +71,3 @@ Moral of the story is to always be on the lookout for powerful generalizations y
 
 >[Wikipedia](https://en.wikipedia.org/wiki/Induction_puzzles#)
 
-<div class="author-box">Chris Su - Carnegie Mellon University - AI &amp; Computer Science</div>

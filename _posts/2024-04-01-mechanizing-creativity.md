@@ -126,4 +126,3 @@ In either case, because of these perhaps utopic consequences, most computer scie
 >
 >[Knowledge, Creativity, and P vs NP](https://www.math.ias.edu/~avi/PUBLICATIONS/MYPAPERS/AW09/AW09.pdf)
 
-<div class="author-box">Chris Su - Carnegie Mellon University - AI &amp; Computer Science</div>

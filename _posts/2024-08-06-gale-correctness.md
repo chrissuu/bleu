@@ -76,4 +76,3 @@ This is easy to see. Namely, suppose the set sizes are $$n \in \mathbb{N}$$. The
 >
 >[Gale-Shapley Algorithm Wiki](https://en.wikipedia.org/wiki/Gale%E2%80%93Shapley_algorithm)
 
-<div class="author-box">Chris Su - Carnegie Mellon University - AI &amp; Computer Science</div>

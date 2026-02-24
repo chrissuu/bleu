@@ -56,4 +56,3 @@ The underlying theme is Stephen Hawking's brilliant foresight and plays on his i
 
 >[Stephen hawking Image Source](https://www.atlasobscura.com/articles/stephen-hawking-time-travelers-party)
 
-<div class="author-box">Chris Su - Carnegie Mellon University - AI &amp; Computer Science</div>

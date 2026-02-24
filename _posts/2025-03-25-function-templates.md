@@ -127,4 +127,3 @@ Yet, this idea is deeper than it seems: since we've essentially serialized the e
 
 [^1]: **fold** (+) 1, **fold** (+) 2, **fold** (+) k, respectively
 
-<div class="author-box">Chris Su - Carnegie Mellon University - AI &amp; Computer Science</div>

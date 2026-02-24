@@ -85,4 +85,3 @@ The question of P vs. NP doesn't just ask about deciders. It is much more genera
 
 >[Knowledge, Creativity, and P vs NP](https://www.math.ias.edu/~avi/PUBLICATIONS/MYPAPERS/AW09/AW09.pdf)
 
-<div class="author-box">Chris Su - Carnegie Mellon University - AI &amp; Computer Science</div>

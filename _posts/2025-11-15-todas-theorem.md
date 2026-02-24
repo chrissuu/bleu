@@ -16,4 +16,3 @@ Hence, a program which takes advantage of being able to encode some exponential 
 ### References
 >[Toda's 1989 Paper](https://dl.acm.org/doi/10.1137/0220053)
 
-<div class="author-box">Chris Su - Carnegie Mellon University - AI &amp; Computer Science</div>

@@ -81,4 +81,3 @@ There are various ways that graph theory and computer science interact with the 
 
 >[Hinge Website](https://hinge.co/ai-principles)
 
-<div class="author-box">Chris Su - Carnegie Mellon University - AI &amp; Computer Science</div>

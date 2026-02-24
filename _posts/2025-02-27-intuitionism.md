@@ -45,4 +45,3 @@ Whichever side you lie on, these ideas help to probe the large question of the n
 
 A future post will try to look into these questions as we slowly move into an era of smarter artificial intelligence.
 
-<div class="author-box">Chris Su - Carnegie Mellon University - AI &amp; Computer Science</div>
