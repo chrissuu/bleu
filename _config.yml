@@ -1,6 +1,9 @@
 title: bleu
-author: chrissu
+author: Chris Su
 subtitle: bomp
+description: Notes on computer science, AI, and mathematics by Chris Su at Carnegie Mellon University (CMU).
+affiliation: Carnegie Mellon University (CMU)
+url: https://www.chrissuu.com
 
 baseurl: "/bleu"
 destination: ./_site/bleu
@@ -20,3 +23,17 @@ navbar:
 markdown: kramdown
 highlighter: rouge
 
+keywords:
+  - Chris Su
+  - CMU
+  - Carnegie Mellon University
+  - computer science blog
+  - AI
+  - mathematics
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      author: Chris Su

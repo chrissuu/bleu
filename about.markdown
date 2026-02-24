@@ -5,7 +5,7 @@ title: About Me
 
 <img class="profile-picture" src="{{site.baseurl}}/{{site.profile-picture}}">
 
-Hi, i'm **chris (jin) su**, a junior at Carnegie Mellon University in Pittsburgh PA. Check out the [parent webpage](https://chrissuu.com)!
+Hi, I'm **Chris (Jin) Su**, a junior at Carnegie Mellon University (CMU) in Pittsburgh, PA. This is my blog, and you can also check out my [parent webpage](https://chrissuu.com).
 
 I enjoy a wide variety of topics, mainly: physics, mathematics, statistics, and the intersections between them. I am particularly passionate about computational complexity theory and how ideas from this field can help us understand machine learning for reasoning, randomness, and proof complexity.
 
@@ -19,5 +19,4 @@ If you want to reach out, contribute a post idea, or find any bugs / typos / mis
 <p align = "left">
   <img src="../assets/IMG_9414.jpg" width = "400"/>
 </p>
-
 

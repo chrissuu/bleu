@@ -3,6 +3,8 @@ layout: default
 ---
 
 <div class="page-subtitle">
+    <span class="post-byline">By {{ site.author }} · {{ site.affiliation }}</span>
+    <br>
     {% for tag in page.tags %}
         {% if page.tags.first == tag %}
             <b>[</b>
