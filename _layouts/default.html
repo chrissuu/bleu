@@ -31,8 +31,8 @@
         sidenotes.className = 'sidenotes';
         content.appendChild(sidenotes);
 
-        let lastTop = 0;
         const minGap = 14;
+        const sidenoteEntries = [];
 
         footnoteLinks.forEach((link) => {
           const href = link.getAttribute('href');
@@ -57,19 +57,35 @@
           note.id = `sidenote-${safeId}`;
           link.setAttribute('href', `#${note.id}`);
           sidenotes.appendChild(note);
-
-          const linkRect = link.getBoundingClientRect();
-          const contentRect = content.getBoundingClientRect();
-          let top = linkRect.top - contentRect.top;
-          if (top < lastTop + minGap) {
-            top = lastTop + minGap;
-          }
-          note.style.top = `${top}px`;
-          lastTop = top;
+          sidenoteEntries.push({ link, note });
         });
 
         if (sidenotes.children.length) {
           document.body.classList.add('has-sidenotes');
+          const layoutSidenotes = () => {
+            const contentRect = content.getBoundingClientRect();
+            let lastBottom = 0;
+            sidenoteEntries.forEach(({ link, note }) => {
+              const linkRect = link.getBoundingClientRect();
+              const preferredTop = linkRect.top - contentRect.top;
+              const top = Math.max(preferredTop, lastBottom + minGap);
+              note.style.top = `${top}px`;
+              lastBottom = top + note.offsetHeight;
+            });
+          };
+
+          const scheduleLayout = () => {
+            window.requestAnimationFrame(layoutSidenotes);
+          };
+
+          layoutSidenotes();
+          window.addEventListener('resize', scheduleLayout);
+          window.addEventListener('load', scheduleLayout);
+          setTimeout(scheduleLayout, 0);
+          setTimeout(scheduleLayout, 120);
+          if (document.fonts && document.fonts.ready) {
+            document.fonts.ready.then(scheduleLayout);
+          }
         }
         return;
       }
