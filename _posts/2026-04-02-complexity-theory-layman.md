@@ -8,11 +8,11 @@ type: nr
 Four months ago, this blog turned 2 years old! As a result, maybe I'll try to go over some of my favorite ideas from the field of computational complexity theory (CCT), which has been the primary motivator for this blog, and recount the several ideas that I've encountered along the way[^1]. 
 
 # What is CCT?
-As it turns out, almost everything is a computation. By computation, I mean, at a high level, some "process" which ingests "information" and "transforms" it[^2]. Since we're human, it becomes very natural to ask questions that help us probe what a "computation" really is. 
+As it turns out, **almost everything we encounter in our day-to-day life is a computation**. By computation, I mean, at a high level, some "process" which ingests "information" and "transforms" it[^2]. Since we're human, it becomes very natural to ask questions that help us probe what a "computation" really is. 
 
 >*How long* does computations take? *How much space* do we need to do a computation? Can *flipping coins* help us do a computation faster (i.e., can randomness help us do a computation)? What's the *fastest* time that some computation can be completed? What sorts of computations does our universe allow? What sorts of computations could exist in other universes? What is the nature of a proof?
 
-Indeed, when applied to more formalized systems, these questions are precisely what CCT tries to study and determine answers to. In particular, CCT tries to formalize the notion of a "resource" and tries to figure out how much of it we need to do something interesting. More interestingly, however, is that when we begin to ask these questions (and answer them), we get a field that is capable of doing "meta"-reasoning.
+Indeed, when applied to more formal systems, these questions are precisely what CCT tries to study and determine answers to. In particular, CCT tries to formalize the notion of a "resource" and tries to figure out how much of it we need to do something interesting. More interestingly, however, is that when we begin to ask these questions (and answer them), we get a field that is capable of doing "meta"-reasoning.
 
 At the end of each section, I'll pose some questions which follow as interesting follow ups to that particular section. My hope is that this blog post will sort of motivate and show the types of (meta-)questions that might arise as we learn more about computation.
 
@@ -23,7 +23,7 @@ So what is an algorithm?
 
 >"An algorithm is a *finite* answer to an infinite number of questions" - Stephen Kleene
 
-The above might be hard to wrap your head around, but here's the general idea: suppose you wanted to multiply together two numbers. Obviously, there are an infinite number of numbers, so it doesn't make much sense to try to have an infinite-sized "rule book" which tells you "ahh yes, 1x1=1, 1x2=2, 1x3=3.... 100x100=10000, etc" (this would be impossible for the human brain). Instead, we've learned in gradeschool how to multiply two arbitrary numbers. Indeed, this rule which we've all internalized is a *finite* description to an infinite number of questions (what is the product of $$a$$ and $$b$$?), and so... (drumroll) it's an algorithm!
+The above might be hard to wrap your head around, but here's the general idea: suppose you wanted to multiply together two numbers. Obviously, there are an infinite number of numbers, so it doesn't make much sense to try to have an infinite-sized "rule book" which tells you "ahh yes, 1x1=1, 1x2=2, 1x3=3.... 100x100=10000, etc" (this would be impossible for the human brain, since our brain only has finite memory). Instead, we've learned in gradeschool how to multiply two arbitrary numbers. Indeed, this rule which we've all internalized is a *finite* description to an infinite number of questions (what is the product of $$a$$ and $$b$$?), and so... (drumroll) it's an algorithm!
 
 Here, you might wonder a few things. Amongst them:
 
