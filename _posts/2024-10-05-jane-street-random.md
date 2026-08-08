@@ -3,7 +3,7 @@ layout: post
 title: what does the shirt say? 
 subtitle: decoding jane street 
 tags: [math, probability] 
-type: r
+fav: n
 ---
 ### Introduction
 The other day, I got a shirt from Jane Street with this design:

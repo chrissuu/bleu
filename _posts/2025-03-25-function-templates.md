@@ -3,7 +3,7 @@ layout: post
 title: currying and function templates
 subtitle: a gentle introduction to functional programming
 tags: [math, programming]
-type: nr
+fav: n
 ---
 ### Introduction
 This is a shorter post, with hopes that by the end of it, you'll begin to see some of the very natural elegance that arises in a functional programming paradigm.

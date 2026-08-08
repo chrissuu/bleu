@@ -4,11 +4,27 @@ layout: default
 
 <div class="filter-bar">
     <span class="tab-button-container">
-        <button class="tab-button" data-filter="all" onclick="filterPosts('all')">[all]</button>
+        <button class="tab-button" data-filter="26" onclick="filterPosts('26')">[26]</button>
     </span>
     <span class="vertical-bar">|</span>
     <span class="tab-button-container">
-        <button class="tab-button" data-filter="favorite" onclick="filterPosts('favorite')">fav</button>
+        <button class="tab-button" data-filter="25" onclick="filterPosts('25')">25</button>
+    </span>
+    <span class="vertical-bar">|</span>
+    <span class="tab-button-container">
+        <button class="tab-button" data-filter="24" onclick="filterPosts('24')">24</button>
+    </span>
+    <span class="vertical-bar">|</span>
+    <span class="tab-button-container">
+        <button class="tab-button" data-filter="23" onclick="filterPosts('23')">23</button>
+    </span>
+    <span class="vertical-bar">|</span>
+    <span class="tab-button-container">
+        <button class="tab-button" data-filter="all" onclick="filterPosts('all')">all</button>
+    </span>
+    <span class="vertical-bar">|</span>
+    <span class="tab-button-container">
+        <button class="tab-button" data-filter="fav" onclick="filterPosts('fav')">fav</button>
     </span>
     <span class="description-separator"> &gt;&gt;</span>
     <div class="description" id ="description">all posts</div>
@@ -23,13 +39,10 @@ layout: default
             {% continue %}
         {% endif %}
     
-        <div class="post-card" type="{{ post.type }}">
+        <div class="post-card" data-year='{{ post.date | date: "%y" }}' data-fav="{% if post.fav == true or post.fav == 'y' %}y{% else %}n{% endif %}">
             <a class="title" href="{{site.baseurl}}{{ post.url }}">
                 {{ post.title }}
             </a>
-            <script>
-                console.log("{{ post.style.display }}")
-            </script>
     
             <div class="details">
                 <b>{{ post.date | date: "%d %B %Y" }}</b>
@@ -60,23 +73,19 @@ layout: default
     function filterPosts(tag) {
         var posts = document.querySelectorAll('.post-card');
         var separators = document.querySelectorAll('.post-separator')
-        // console.log(tag)
-        console.log(posts.length);
-        console.log(separators.length);
         posts.forEach(function(post, index) {
-            // console.log(post.getAttributeNames());
-            
-            var postType = post.getAttribute('type');
-            console.log('posttype:');
-            console.log(postType);
-            var splitAndRemoveSpaces = postType.split(',').map(item => item.trim()).filter(item => item.length > 0);
-            // /console.log(postType)
-            console.log(splitAndRemoveSpaces);
-            if (tag === 'all' && (splitAndRemoveSpaces.includes('r') || splitAndRemoveSpaces.includes('nr'))) {
+            var postYear = post.dataset.year;
+            var postFav = post.dataset.fav;
+
+            if (tag === 'all') {
                 post.style.display = 'block';
                 separators[index].style.display="block";
             }
-            else if (tag === 'favorite' && splitAndRemoveSpaces.includes('f')) {
+            else if (tag === 'fav' && postFav === 'y') {
+                post.style.display = 'block';
+                separators[index].style.display="block";
+            }
+            else if (postYear === tag) {
                 post.style.display = 'block';
                 separators[index].style.display="block";
             }    
@@ -84,7 +93,6 @@ layout: default
                 post.style.display = 'none';
                 separators[index].style.display="none";
             }
-            console.log("Post:", post.querySelector('.title').innerText, "Display:", post.style.display);
         });
 
         changeTheme(tag);
@@ -110,16 +118,7 @@ layout: default
     function changeTheme(tag) {
         var body = document.body;
         
-        if (tag === 'rigorous') {
-            duskTheme(body);
-
-        } else if (tag === 'nonrigorous') {
-            dawnTheme(body);
-        }
-
-        else {
-            regularTheme(body);
-        }
+        regularTheme(body);
     }
 
     function updateButtons(filter) {
@@ -127,15 +126,31 @@ layout: default
 
         const map = new Map();
         
-        map.set('favorite', 'fav');
+        map.set('26', '26');
+        map.set('25', '25');
+        map.set('24', '24');
+        map.set('23', '23');
         map.set('all', 'all');
+        map.set('fav', 'fav');
 
         switch(filter) {
-            case 'all':
-                descriptionText ='all posts \\ {randoms}';
+            case '26':
+                descriptionText = 'posts from 2026';
                 break;
-            case 'favorite':
-                descriptionText = 'favorite, must reads, and randoms';
+            case '25':
+                descriptionText = 'posts from 2025';
+                break;
+            case '24':
+                descriptionText = 'posts from 2024';
+                break;
+            case '23':
+                descriptionText = 'posts from 2023';
+                break;
+            case 'all':
+                descriptionText ='all posts';
+                break;
+            case 'fav':
+                descriptionText = 'favorite posts';
                 break;
         }
 
@@ -173,10 +188,10 @@ layout: default
     }
 
     function applyDefaultFilter() {
-        filterPosts('all');
+        filterPosts('26');
     }
     document.addEventListener('DOMContentLoaded', () => {
             applyDefaultFilter();
-            typeWriterEffect("all posts \\ {randoms}"); // Change this to any message you want to display initially
+            typeWriterEffect("posts from 2026");
     });
 </script>

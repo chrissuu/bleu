@@ -125,12 +125,8 @@ def main() -> int:
 
     content_lines.append(f"tags: {i_tags}\n")
 
-    b_post_type = _prompt_yn("Rigorous post type? [y/n]\n")
-
-    if b_post_type:
-        content_lines.append("type: r\n")
-    else:
-        content_lines.append("type: nr\n")
+    b_fav = _prompt_yn("Favorite post? [y/n]\n")
+    content_lines.append(f"fav: {'y' if b_fav else 'n'}\n")
 
     content_lines.append("---\n")
 

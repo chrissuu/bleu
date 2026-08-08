@@ -3,7 +3,7 @@ layout: post
 title: brouwer and the intuitionists
 subtitle: the philosophy of mathematics
 tags: [math, philosophy]
-type: nr
+fav: n
 ---
 ### Introduction
 Mathematics is a language that formalizes human reasoning. It evolved out of necessity from observing physical phenomena and patterns that needed some form of formal structure to describe. Within mathematics, it is possible to be **certain** about things, and even in systems that might appear random, we are still able to create formalizations that capture patterns within randomness - a "certainty" about "randomness". 

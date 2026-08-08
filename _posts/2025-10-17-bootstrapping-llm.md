@@ -3,7 +3,7 @@ layout: post
 title: pre training as bootstrapping
 subtitle: llm post-training
 tags: [ai]
-type: nr
+fav: n
 ---
 Super quick post, but I wanted to talk about this semi-interesting phenomenon about training steps for LLMs.
 

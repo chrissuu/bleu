@@ -3,7 +3,7 @@ layout: post
 title: probabilistic grandfather
 subtitle: time travel as a computational resource? (pt 1)
 tags: [math, complexity theory]
-type: nr
+fav: n
 ---
 ### Introduction
 A well known time travel paradox goes like this:

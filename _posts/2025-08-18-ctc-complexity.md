@@ -3,7 +3,7 @@ layout: post
 title: closed timelike curve complexity
 subtitle: time travel as a computational resource? (pt 2)
 tags: [complexity theory]
-type: r
+fav: n
 ---
 ### Introduction
 [In a previous post](https://chrissuu.com/bleu/2025-08-18-probabilistic-grandfathers/), we covered the Grandfather paradox and how it arises naturally when you allow a time machine to exist. 

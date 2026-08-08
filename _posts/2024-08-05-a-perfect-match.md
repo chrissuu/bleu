@@ -3,7 +3,7 @@ layout: post
 title: a perfect match
 subtitle: the stable marriage problem (pt1)
 tags: [cs, graph theory]
-type: r
+fav: n
 ---
 
 ### Introduction

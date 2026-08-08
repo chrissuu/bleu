@@ -3,7 +3,7 @@ layout: post
 title: the amazing theory of complexity!
 subtitle: ramblings on complexity theory (pt 1)
 tags: [cs]
-type: nr
+fav: n
 ---
 Four months ago, this blog turned 2 years old! As a result, maybe I'll try to go over some of my favorite ideas from the field of computational complexity theory (CCT), which has been the primary motivator for this blog, and recount the several ideas that I've encountered along the way[^1]. 
 

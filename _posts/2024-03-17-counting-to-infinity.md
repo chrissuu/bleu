@@ -3,7 +3,7 @@ layout: post
 title: a real and natural dilemma
 subtitle: a nonrigorous introduction to cardinality
 tags: [math]
-type: nr, f
+fav: y
 ---
 
 One of the first things we ever learn how to do is count! 

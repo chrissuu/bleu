@@ -3,7 +3,7 @@ layout: post
 title: your time is taking up my space!
 subtitle: time travel as a computational resource? (pt 3)
 tags: [complexity theory]
-type: r
+fav: n
 ---
 ### Introduction
 To finally wrap up this series, we will finally talk about one of the more interesting results equating polynomial time CTC machines with the complexity class, PSPACE!

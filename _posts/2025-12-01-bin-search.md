@@ -3,7 +3,7 @@ layout: post
 title: revisiting bin. search
 subtitle: reduction to partitioned boolean array search
 tags: [cs]
-type: nr
+fav: n
 ---
 One of the first algorithms that all CS majors might learn is the binary search algorithm, which 
 lets you search some sorted sequence with only a logarithmic number of queries. However, binary
